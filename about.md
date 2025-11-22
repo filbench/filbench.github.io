@@ -4,15 +4,61 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Our Mission
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+---
 
-[jekyll-organization]: https://github.com/jekyll
+## Team Members
+
+### Principal Investigator
+
+**Dr. Jane Smith**
+Professor of Computer Science
+Email: jane.smith@university.edu
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Research interests include machine learning, data systems, and computational science.
+
+---
+
+### Graduate Students
+
+**John Doe** - PhD Candidate
+Working on neural architecture optimization and deep learning theory.
+
+**Alice Brown** - PhD Candidate
+Researching scalable machine learning algorithms and distributed systems.
+
+**Bob Johnson** - MS Student
+Focusing on computational science and high-performance computing.
+
+---
+
+### Undergraduate Researchers
+
+**Carol White** - Senior
+Exploring data analytics and visualization techniques.
+
+**David Lee** - Junior
+Investigating privacy-preserving machine learning methods.
+
+---
+
+## Alumni
+
+Our alumni have gone on to successful careers in academia and industry, working at leading universities, research labs, and technology companies around the world.
+
+---
+
+## Contact
+
+**Address:**
+Department of Computer Science
+University Name
+123 Main Street
+City, State 12345
+
+**Email:** research-group@university.edu
