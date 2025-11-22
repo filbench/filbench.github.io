@@ -1,5 +1,6 @@
 ---
 layout: home
-title: We are a collective of Pinoy NLP Researchers
 ---
+
+# FilBench is a collective of Pinoy NLP Researchers
 
