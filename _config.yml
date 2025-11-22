@@ -27,7 +27,6 @@ rss: rss
 # Navigation menu order
 header_pages:
   - research.md
-  - publications.md
   - about.md
   - blog/index.md
   - join.md
