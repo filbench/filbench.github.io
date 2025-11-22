@@ -3,6 +3,16 @@
 
 @import "minima";
 
+/* Reset Minima table styles completely */
+table,
+table tr,
+table th,
+table td {
+  border: none !important;
+  background: none !important;
+  background-color: transparent !important;
+}
+
 /* Custom font declarations */
 @font-face {
   font-family: 'Univers';
@@ -52,18 +62,36 @@
   font-display: swap;
 }
 
-/* Override body font to Univers */
+/* Override all fonts to Univers */
 body {
-  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* All headings and titles use Univers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.post-title,
+.page-heading,
+.post-list-heading {
+  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
 
 /* Code font to Berkeley Mono */
-pre, code, .highlight {
-  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
+pre,
+code,
+.highlight {
+  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
 }
 
 /* Button styles with red gradient inspired by sfcompute */
-button, .button, a.button {
+button,
+.button,
+a.button {
   display: inline-block;
   padding: 12px 24px;
   border: none;
@@ -78,7 +106,9 @@ button, .button, a.button {
   box-shadow: 0 4px 6px rgba(220, 38, 38, 0.2);
 }
 
-button:hover, .button:hover, a.button:hover {
+button:hover,
+.button:hover,
+a.button:hover {
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%);
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
@@ -86,53 +116,62 @@ button:hover, .button:hover, a.button:hover {
   color: white;
 }
 
-button:active, .button:active, a.button:active {
+button:active,
+.button:active,
+a.button:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
 }
 
-/* Booktabs-style table styling */
+/* Booktabs-style table styling - override minima defaults */
 table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-  border: none;
+  border: none !important;
+  color: #111 !important;
+  box-shadow: none !important;
 }
 
 /* Top border - thick and dark */
 table thead tr:first-child th {
-  border-top: 2px solid #111;
+  border-top: 2px solid #111 !important;
   padding-top: 12px;
 }
 
 /* Header styling - no background gradient, just clean text */
 table th {
-  padding: 12px 16px;
+  padding: 12px 16px !important;
   font-weight: 600;
   text-align: left;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1.5px solid #111;
-  background: transparent;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1.5px solid #111 !important;
+  background: transparent !important;
 }
 
 /* Table cells - no vertical borders */
 table td {
-  padding: 10px 16px;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
+  padding: 10px 16px !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 /* Alternating row colors for better readability */
 table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #f9fafb;
+  background-color: #f9fafb !important;
+}
+
+/* Remove old minima table row styling */
+table tr:nth-child(even) {
+  background-color: transparent !important;
 }
 
 /* Subtle hover effect */
@@ -141,12 +180,12 @@ table tbody tr {
 }
 
 table tbody tr:hover {
-  background-color: #fef2f2;
+  background-color: #fef2f2 !important;
 }
 
 /* Bottom border - thick and dark */
 table tbody tr:last-child td {
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid #111 !important;
   padding-bottom: 12px;
 }
 
