@@ -1,0 +1,42 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#fef3c7"/>
+
+  <!-- Heatmap grid -->
+  <rect x="40" y="30" width="30" height="25" fill="#fbbf24" rx="2"/>
+  <rect x="75" y="30" width="30" height="25" fill="#f59e0b" rx="2"/>
+  <rect x="110" y="30" width="30" height="25" fill="#d97706" rx="2"/>
+  <rect x="145" y="30" width="30" height="25" fill="#b45309" rx="2"/>
+  <rect x="180" y="30" width="30" height="25" fill="#92400e" rx="2"/>
+
+  <rect x="40" y="60" width="30" height="25" fill="#fcd34d" rx="2"/>
+  <rect x="75" y="60" width="30" height="25" fill="#fbbf24" rx="2"/>
+  <rect x="110" y="60" width="30" height="25" fill="#f59e0b" rx="2"/>
+  <rect x="145" y="60" width="30" height="25" fill="#d97706" rx="2"/>
+  <rect x="180" y="60" width="30" height="25" fill="#b45309" rx="2"/>
+
+  <rect x="40" y="90" width="30" height="25" fill="#fde68a" rx="2"/>
+  <rect x="75" y="90" width="30" height="25" fill="#fcd34d" rx="2"/>
+  <rect x="110" y="90" width="30" height="25" fill="#fbbf24" rx="2"/>
+  <rect x="145" y="90" width="30" height="25" fill="#f59e0b" rx="2"/>
+  <rect x="180" y="90" width="30" height="25" fill="#d97706" rx="2"/>
+
+  <rect x="40" y="120" width="30" height="25" fill="#fef3c7" rx="2"/>
+  <rect x="75" y="120" width="30" height="25" fill="#fde68a" rx="2"/>
+  <rect x="110" y="120" width="30" height="25" fill="#fcd34d" rx="2"/>
+  <rect x="145" y="120" width="30" height="25" fill="#fbbf24" rx="2"/>
+  <rect x="180" y="120" width="30" height="25" fill="#f59e0b" rx="2"/>
+
+  <rect x="40" y="150" width="30" height="25" fill="#fffbeb" rx="2"/>
+  <rect x="75" y="150" width="30" height="25" fill="#fef3c7" rx="2"/>
+  <rect x="110" y="150" width="30" height="25" fill="#fde68a" rx="2"/>
+  <rect x="145" y="150" width="30" height="25" fill="#fcd34d" rx="2"/>
+  <rect x="180" y="150" width="30" height="25" fill="#fbbf24" rx="2"/>
+
+  <!-- Arrow -->
+  <path d="M 225 40 L 225 170" stroke="#78350f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 225 170 L 260 170" stroke="#78350f" stroke-width="2"/>
+
+  <!-- Title placeholder -->
+  <rect x="20" y="10" width="130" height="12" fill="#92400e" rx="2" opacity="0.3"/>
+</svg>
