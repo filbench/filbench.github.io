@@ -28,6 +28,7 @@ header_pages:
   - research.md
   - publications.md
   - about.md
+  - blog.md
   - join.md
 
 # Build settings

@@ -16,7 +16,7 @@ table td {
 /* Custom font declarations */
 @font-face {
   font-family: 'Univers';
-  src: url('../fonts/Univers/UniversRegular.ttf') format('truetype');
+  src: url('/assets/fonts/Univers/UniversRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@ table td {
 
 @font-face {
   font-family: 'Univers';
-  src: url('../fonts/Univers/UniversLight.ttf') format('truetype');
+  src: url('/assets/fonts/Univers/UniversLight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@ table td {
 
 @font-face {
   font-family: 'Univers';
-  src: url('../fonts/Univers/UniversBold.ttf') format('truetype');
+  src: url('/assets/fonts/Univers/UniversBold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@ table td {
 
 @font-face {
   font-family: 'Berkeley Mono';
-  src: url('../fonts/BerkeleyMono/BerkeleyMono-Regular.otf') format('opentype');
+  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@ table td {
 
 @font-face {
   font-family: 'Berkeley Mono';
-  src: url('../fonts/BerkeleyMono/BerkeleyMono-Bold.otf') format('opentype');
+  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@ table td {
 
 @font-face {
   font-family: 'Berkeley Mono';
-  src: url('../fonts/BerkeleyMono/BerkeleyMono-Oblique.otf') format('opentype');
+  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Oblique.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
