@@ -3,12 +3,63 @@
 
 @import "minima";
 
-/* Import IBM Plex Sans font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* Custom font declarations */
+@font-face {
+  font-family: 'Univers';
+  src: url('../fonts/Univers/UniversRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* Override body font to IBM Plex Sans */
+@font-face {
+  font-family: 'Univers';
+  src: url('../fonts/Univers/UniversLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('../fonts/Univers/UniversBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('../fonts/BerkeleyMono/BerkeleyMono-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('../fonts/BerkeleyMono/BerkeleyMono-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('../fonts/BerkeleyMono/BerkeleyMono-Oblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Override body font to Univers */
 body {
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Code font to Berkeley Mono */
+pre, code, .highlight {
+  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace;
 }
 
 /* Button styles with red gradient inspired by sfcompute */
@@ -40,41 +91,42 @@ button:active, .button:active, a.button:active {
   box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
 }
 
-/* Enhanced table styling with better alternating colors */
+/* Booktabs-style table styling */
 table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
-table thead {
-  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
-  color: white;
+/* Top border - thick and dark */
+table thead tr:first-child th {
+  border-top: 2px solid #111;
+  padding-top: 12px;
 }
 
+/* Header styling - no background gradient, just clean text */
 table th {
-  padding: 16px 20px;
+  padding: 12px 16px;
   font-weight: 600;
   text-align: left;
-  border: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px solid #111;
   background: transparent;
 }
 
+/* Table cells - no vertical borders */
 table td {
-  padding: 14px 20px;
-  border: none;
-  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 16px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
 
-table tbody tr {
-  transition: background-color 0.2s ease;
-}
-
+/* Alternating row colors for better readability */
 table tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
@@ -83,12 +135,19 @@ table tbody tr:nth-child(even) {
   background-color: #f9fafb;
 }
 
+/* Subtle hover effect */
+table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
 table tbody tr:hover {
   background-color: #fef2f2;
 }
 
+/* Bottom border - thick and dark */
 table tbody tr:last-child td {
-  border-bottom: none;
+  border-bottom: 2px solid #111;
+  padding-bottom: 12px;
 }
 
 /* Update link colors to match red theme */
