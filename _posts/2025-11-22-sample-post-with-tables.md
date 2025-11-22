@@ -2,6 +2,7 @@
 layout: post
 title:  "Sample Post: Benchmark Results"
 date:   2025-11-22 22:10:00 +0800
+description: Comparing language model performance across different metrics and training costs
 categories: benchmarks demo
 ---
 
