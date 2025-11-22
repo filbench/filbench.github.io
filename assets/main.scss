@@ -173,6 +173,7 @@ a.button:active {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+  filter: brightness(0) invert(1);
 }
 
 /* Booktabs-style table styling - override minima defaults */
