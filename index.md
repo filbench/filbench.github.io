@@ -1,5 +1,5 @@
 ---
 layout: home
-title: Home
+title: We are a collective of Pinoy NLP Researchers
 ---
 
