@@ -15,3 +15,13 @@ lead_email: ljvm2@cam.ac.uk
 lead_website: https://ljvmiranda.github.io/
 ---
 
+
+Instruction-tuning (or supervised finetuning, SFT) is a method to further refine a model's capabilities on a specific task or language. 
+It is relatively cheap and simple, and most foundation model providers include instruction-tuned models in their releases.
+
+Most foundation model providers rely on open-source datasets as a data source to train their models.
+I believe that we can indirectly influence their model development pipelines by **contributing a high-quality instruction-tuning dataset in the open ecosystem**.
+In addition, this effort also paves the way for training our own Filipino-centric language models.
+
+
+## What exactly are we trying to do?
