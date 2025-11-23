@@ -112,38 +112,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
   <div class="home-section">
     <h2>News</h2>
     <ul class="news-list">
+      {% for item in site.data.news %}
       <li class="news-item">
         <div class="news-header">
-          <div class="news-date">Nov 2024</div>
-          <div class="news-content">
-            Our paper on <a href="#">Filipino Language Models</a> was accepted to NeurIPS 2024!
-          </div>
+          <div class="news-date">{{ item.date }}</div>
+          <div class="news-content">{{ item.content }}</div>
         </div>
       </li>
-      <li class="news-item">
-        <div class="news-header">
-          <div class="news-date">Oct 2024</div>
-          <div class="news-content">
-            Released <a href="#">FilBERT v2.0</a> with improved performance on downstream tasks.
-          </div>
-        </div>
-      </li>
-      <li class="news-item">
-        <div class="news-header">
-          <div class="news-date">Sep 2024</div>
-          <div class="news-content">
-            New dataset available: <a href="#">Filipino Social Media Corpus</a> with 10M annotated posts.
-          </div>
-        </div>
-      </li>
-      <li class="news-item">
-        <div class="news-header">
-          <div class="news-date">Aug 2024</div>
-          <div class="news-content">
-            Welcoming 5 new members to the research collective!
-          </div>
-        </div>
-      </li>
+      {% endfor %}
     </ul>
   </div>
 
