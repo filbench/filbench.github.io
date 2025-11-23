@@ -1,0 +1,70 @@
+---
+layout: page
+---
+
+<style>
+.project-meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.project-meta-item {
+  margin-bottom: 0.5em;
+}
+
+.project-meta-label {
+  font-weight: 600;
+  color: #555;
+  margin-right: 0.5em;
+}
+
+.project-skills {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.3em;
+}
+
+.project-skill-tag {
+  background: #e8f4f8;
+  color: #0066cc;
+  padding: 0.2em 0.6em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+</style>
+
+{% if page.category or page.expected_date_range or page.skills %}
+<div class="project-meta">
+  {% if page.category %}
+  <div class="project-meta-item">
+    <span class="project-meta-label">Category:</span>
+    <span>{{ page.category }}</span>
+  </div>
+  {% endif %}
+
+  {% if page.expected_date_range %}
+  <div class="project-meta-item">
+    <span class="project-meta-label">Timeline:</span>
+    <span>{{ page.expected_date_range }}</span>
+  </div>
+  {% endif %}
+
+  {% if page.skills %}
+  <div class="project-meta-item">
+    <span class="project-meta-label">Skills needed:</span>
+    <div class="project-skills">
+      {% for skill in page.skills %}
+      <span class="project-skill-tag">{{ skill }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+{{ content }}
