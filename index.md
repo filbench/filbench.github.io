@@ -9,12 +9,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
   <a href="#" class="button">
     <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
-    GitHub
+    Code
     <span style="margin-left: 4px;">→</span>
   </a>
   <a href="#" class="button">
     <img src="{{ '/assets/icons/huggingface.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
-    HuggingFace
+    Resources
     <span style="margin-left: 4px;">→</span>
   </a>
   <a href="#" class="button">
