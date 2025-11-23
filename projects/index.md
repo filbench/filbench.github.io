@@ -162,11 +162,13 @@ We are constantly **looking for collaborators**, especially those interested in 
 <p>No projects yet.</p>
 {% endif %}
 
-## Frequently Asked Questions
-
 <style>
 .faq-section {
-  margin-top: 3em;
+  margin-top: 2em;
+}
+
+.faq-section h2 {
+  margin-bottom: 1em;
 }
 
 .faq-item {
@@ -213,26 +215,40 @@ We are constantly **looking for collaborators**, especially those interested in 
 }
 </style>
 
+&nbsp;
+
+## Frequently Asked Questions
+
 <div class="faq-section">
+
 
 <details class="faq-item">
   <summary>How are projects decided?</summary>
   <div class="faq-answer">
-    Projects are proposed and discussed by community members based on identified gaps in Filipino NLP resources and current research needs. We prioritize projects that will have the most impact on advancing Philippine language technology and those that align with our members' expertise and interests.
+    It's a loose process, but in general, projects are proposed and discussed by the group based on gaps we find in Filipino NLP and current research needs.
+    It is important that a project has a dedicated lead to drive it forward, so it also helps if your research project aligns with your own interests or ongoing work (e.g., thesis, job).
+    Finally, we are still an academic research group at heart, so projects that can potentially lead to publications are prioritized.
   </div>
 </details>
 
 <details class="faq-item">
   <summary>How can I join a project?</summary>
   <div class="faq-answer">
-    Click on any project above to see the skills needed and timeline. If you're interested, reach out to us through our contact channels with information about your background and which project interests you. We welcome collaborators at all levels, from students to experienced researchers.
+    Click on any project above to see the skills needed and timeline. 
+    If you're interested, reach out to the project lead through their contact channels with information about your background. 
+    We welcome contributors from all levels of experience, from students to experienced researchers.
   </div>
 </details>
 
 <details class="faq-item">
-  <summary>I'm not a researcher, but how can I help?</summary>
+  <summary>I'm not an NLP researcher, but how can I help?</summary>
   <div class="faq-answer">
-    There are many ways to contribute! We need native speakers for annotation and validation, software engineers for tooling and infrastructure, designers for documentation, and advocates to help spread the word. Many of our tasks don't require research experience—just enthusiasm and dedication to Filipino language technology.
+    There are many ways to contribute! 
+    The best way is by donating compute resources or funding to support our work.
+    Compute resources can be in the form of cloud credits or sharing access to machines with GPUs.
+    We'll use these resources for training models and running experiments.
+    Also, we'll acknowledge your organization in our project pages and publications.
+    Finally, spreading the word about our projects and sharing our models and datasets with your networks also helps a lot!
   </div>
 </details>
 
