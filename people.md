@@ -5,34 +5,43 @@ permalink: /people/
 ---
 
 <style>
-.people-grid {
+.people-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-  margin-top: 1em;
 }
 
 .person-card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  gap: 0.75em;
+  padding: 0.5em;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background: #fafafa;
 }
 
 .person-photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
   object-fit: cover;
   filter: grayscale(100%);
-  margin-bottom: 0.5em;
+  flex-shrink: 0;
+}
+
+.person-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .person-name {
   font-size: 0.95em;
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.25em;
 }
 
 .person-name a {
@@ -42,27 +51,18 @@ permalink: /people/
 
 .person-name a:hover {
   color: #0066cc;
-  text-decoration: underline;
 }
 
-.person-affiliation {
+.person-affiliation-role {
   font-size: 0.8em;
   color: #666;
   margin-bottom: 0.4em;
-  font-style: italic;
 }
 
 .person-interests {
   font-size: 0.75em;
   color: #777;
-  line-height: 1.3;
-}
-
-.person-interests-label {
-  font-weight: 600;
-  color: #555;
-  display: block;
-  margin-bottom: 0.2em;
+  line-height: 1.4;
 }
 
 .person-interests ul {
@@ -72,32 +72,44 @@ permalink: /people/
 }
 
 .person-interests li {
-  margin-bottom: 0.1em;
+  display: inline;
+}
+
+.person-interests li:after {
+  content: " • ";
+  color: #ccc;
+}
+
+.person-interests li:last-child:after {
+  content: "";
 }
 </style>
 
-<div class="people-grid">
+<ul class="people-list">
   {% for person in site.data.people %}
-  <div class="person-card">
+  <li class="person-card">
     <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" class="person-photo">
-    <div class="person-name">
-      {% if person.website %}
-      <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
-      {% else %}
-      {{ person.name }}
+    <div class="person-info">
+      <div class="person-name">
+        {% if person.website %}
+        <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
+        {% else %}
+        {{ person.name }}
+        {% endif %}
+      </div>
+      <div class="person-affiliation-role">
+        {% if person.role %}{{ person.role }}, {% endif %}{{ person.affiliation }}
+      </div>
+      {% if person.research_interests %}
+      <div class="person-interests">
+        <ul>
+          {% for interest in person.research_interests %}
+          <li>{{ interest }}</li>
+          {% endfor %}
+        </ul>
+      </div>
       {% endif %}
     </div>
-    <div class="person-affiliation">{{ person.affiliation }}</div>
-    {% if person.research_interests %}
-    <div class="person-interests">
-      <span class="person-interests-label">Research Interests:</span>
-      <ul>
-        {% for interest in person.research_interests %}
-        <li>{{ interest }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-  </div>
+  </li>
   {% endfor %}
-</div>
+</ul>

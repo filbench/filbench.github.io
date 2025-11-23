@@ -1,24 +1,37 @@
 # Team members
 # Add team members here with the following fields:
-# - name: Full name
+# - name: Full name (or nickname)
 # - photo: Path to photo (place in /assets/images/people/)
 # - affiliation: University or organization
+# - role: Their role in the group
 # - research_interests: List of research interests
 # - website: (optional) Personal website URL
 
-- name: Jane Doe
+- name: Jane
   photo: /assets/images/people/jane-doe.jpg
   affiliation: University of the Philippines
+  role: PhD Student
   research_interests:
     - Natural Language Processing
     - Machine Translation
     - Low-resource Languages
   website: https://example.com/janedoe
 
-- name: John Smith
+- name: John
   photo: /assets/images/people/john-smith.jpg
   affiliation: Ateneo de Manila University
+  role: Assistant Professor
   research_interests:
     - Computational Linguistics
     - Sentiment Analysis
     - Filipino Language Processing
+
+- name: Maria
+  photo: /assets/images/people/maria-cruz.jpg
+  affiliation: De La Salle University
+  role: Postdoctoral Researcher
+  research_interests:
+    - Speech Recognition
+    - Code-switching
+    - Multilingual NLP
+  website: https://example.com/mariacruz
