@@ -2,7 +2,7 @@
   - title: "FilBench: Can LLMs Understand and Generate Filipino?"
     authors: "Lester James V. Miranda*, Elyanah Aco*, Conner Manuel*, Jan Christian Blaise Cruz, Joseph Marvin Imperial"
     venue: "EMNLP 2025 (Main)"
-    image: "/assets/images/publications/sample-paper-1.svg"
+    image: "/assets/images/publications/filbench.png"
     links:
       - name: "PDF"
         url: "https://aclanthology.org/2025.emnlp-main.127/"
