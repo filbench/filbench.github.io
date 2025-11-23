@@ -8,12 +8,12 @@ We are a collective of NLP researchers&mdash;graduate students, industry practit
 We operate as a scrappy grassroots team, pooling shared resources to move fast and build what the research community needs.
 
 <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-  <a href="#" class="button">
+  <a href="https://github.com/filbench" class="button">
     <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
     Code
     <span style="margin-left: 4px;">→</span>
   </a>
-  <a href="#" class="button">
+  <a href="https://huggingface.co/UD-Filipino" class="button">
     <img src="{{ '/assets/icons/huggingface.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
     Resources
     <span style="margin-left: 4px;">→</span>
