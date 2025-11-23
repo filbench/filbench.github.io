@@ -7,9 +7,9 @@ permalink: /projects/
 <style>
 .page-content h1:first-child,
 .page-heading,
-.post-title {
+/* .post-title {
   display: none;
-}
+} */
 
 .projects-list {
   list-style: none;
@@ -67,7 +67,10 @@ permalink: /projects/
 }
 </style>
 
-Below are some of our ongoing projects.
+Below are our ongoing projects for Filipino NLP.
+We are constantly **looking for collaborators**, especially those interested in contributing annotations, compute resources (credits or machines), or expertise in specific areas such as evaluation, data collection, and model post-training.
+
+&nbsp;
 
 {% assign projects = site.categories.projects | sort: 'date' | reverse %}
 {% if projects.size > 0 %}
