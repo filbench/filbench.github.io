@@ -7,29 +7,30 @@
 # - research_interests: List of research interests
 # - website: (optional) Personal website URL
 
-- name: Jane
-  photo: /assets/images/people/jane-doe.jpg
-  affiliation: University of the Philippines
+- name: Lj V. Miranda
+  photo: /assets/images/people/lj.jpg
+  affiliation: University of Cambridge
   role: PhD Student
   research_interests:
-    - Natural Language Processing
-    - Machine Translation
-    - Low-resource Languages
-  website: https://example.com/janedoe
+    - Efficient NLP 
+    - Data-centric AI 
+    - Multilingual NLP and post-training 
+  website: https://ljvmiranda921.github.io
 
-- name: John
+- name: Joseph Imperial
   photo: /assets/images/people/john-smith.jpg
-  affiliation: Ateneo de Manila University
-  role: Assistant Professor
+  affiliation: University of Bath
+  role: PhD Student
   research_interests:
-    - Computational Linguistics
-    - Sentiment Analysis
-    - Filipino Language Processing
+    - Standardization in AI
+    - Benchmarking and evaluation 
+    - Low-resource NLP 
+  website: https://www.josephimperial.com/home
 
-- name: Maria
+- name: Blaise Cruz
   photo: /assets/images/people/maria-cruz.jpg
-  affiliation: De La Salle University
-  role: Postdoctoral Researcher
+  affiliation: MBZUAI 
+  role: PhD Student
   research_interests:
     - Speech Recognition
     - Code-switching

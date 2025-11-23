@@ -15,12 +15,16 @@ permalink: /people/
 }
 
 .person-card {
-  display: flex;
-  gap: 0.75em;
   padding: 0.5em;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background: #fafafa;
+}
+
+.person-content {
+  display: flex;
+  gap: 0.75em;
+  flex-wrap: wrap;
 }
 
 .person-photo {
@@ -63,6 +67,7 @@ permalink: /people/
   font-size: 0.75em;
   color: #777;
   line-height: 1.4;
+  flex-basis: 100%;
 }
 
 .person-interests ul {
@@ -88,17 +93,19 @@ permalink: /people/
 <ul class="people-list">
   {% for person in site.data.people %}
   <li class="person-card">
-    <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" class="person-photo">
-    <div class="person-info">
-      <div class="person-name">
-        {% if person.website %}
-        <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
-        {% else %}
-        {{ person.name }}
-        {% endif %}
-      </div>
-      <div class="person-affiliation-role">
-        {% if person.role %}{{ person.role }}, {% endif %}{{ person.affiliation }}
+    <div class="person-content">
+      <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" class="person-photo">
+      <div class="person-info">
+        <div class="person-name">
+          {% if person.website %}
+          <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
+          {% else %}
+          {{ person.name }}
+          {% endif %}
+        </div>
+        <div class="person-affiliation-role">
+          {% if person.role %}{{ person.role }}, {% endif %}{{ person.affiliation }}
+        </div>
       </div>
       {% if person.research_interests %}
       <div class="person-interests">
