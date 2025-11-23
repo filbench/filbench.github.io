@@ -27,7 +27,7 @@ This effort also paves the way for training our own Filipino-centric language mo
 We will curate a **high-quality instruction-tuning dataset** for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.
 By doing so, we aim to answer the following research questions:
 
-- **Data sourcing and composition**: Where can we find high-quality instruction data for Philippine languages? Should we prioritize synthetic generation, community platforms like Reddit, existing datasets, or a combination of these sources? What is the optimal mix of data sources to maximize quality and diversity?
+- **Data sourcing and composition**: Where can we find high-quality instruction data for Philippine languages? Should we prioritize synthetic generation, community platforms like Reddit, existing datasets like [Aya](https://huggingface.co/collections/CohereLabs/aya-datasets), or a combination of these sources? What is the optimal mix of data sources to maximize quality and diversity?
 
 - **Data efficiency**: How much instruction-tuning data is needed to achieve strong performance on Filipino NLP benchmarks such as [FilBench](https://aclanthology.org/2025.emnlp-main.127/)? Can we identify diminishing returns to guide efficient data collection efforts?
 
@@ -35,6 +35,9 @@ By doing so, we aim to answer the following research questions:
 
 ## How is it done today?
 
+Here is how other language communities did it:
+
+<!-- add table -->
 
 ## Who cares and will pay attention? 
 
@@ -42,8 +45,14 @@ By doing so, we aim to answer the following research questions:
 
 ## What are the risks?
 
+One potential risk is not finding a decent source of instruction-tuning data for non-Tagalog languages.
+We can solve this by using a machine translation system (e.g., [NLLB](https://huggingface.co/docs/transformers/en/model_doc/nllb) or Google Translate API) to translate from English/Tagalog to another language, and refining the output via human annotation.
 
 ## How long will it take?
 
 
 ## What are the midterm and final checks?
+
+
+
+## What are the stretch goals? 
