@@ -7,28 +7,28 @@ permalink: /publications/
 <style>
 /* Publications styling */
 .publications {
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
 .year-group {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .year-heading {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 1.5em;
-  padding-bottom: 0.3em;
-  border-bottom: 2px solid #e5e7eb;
-  color: #1f2937;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
 }
 
 .publication {
   display: flex;
-  gap: 1.5em;
-  margin-bottom: 2.5em;
-  padding-bottom: 2em;
-  border-bottom: 1px solid #f3f4f6;
+  gap: 1em;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.25em;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .publication:last-child {
@@ -37,20 +37,15 @@ permalink: /publications/
 
 .pub-image {
   flex-shrink: 0;
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
 .pub-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.pub-image img:hover {
-  transform: scale(1.03);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .pub-content {
@@ -59,60 +54,57 @@ permalink: /publications/
 }
 
 .pub-title {
-  font-size: 1.15em;
+  font-size: 1em;
   font-weight: 600;
-  margin-bottom: 0.4em;
-  line-height: 1.4;
+  margin-bottom: 0.25em;
+  line-height: 1.3;
   color: #111827;
 }
 
 .pub-authors {
-  color: #374151;
-  margin-bottom: 0.3em;
-  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 0.2em;
+  font-size: 0.9em;
 }
 
 .pub-venue {
   font-style: italic;
-  color: #6b7280;
-  margin-bottom: 0.7em;
-  font-size: 0.95em;
+  color: #999;
+  margin-bottom: 0.5em;
+  font-size: 0.85em;
 }
 
 .pub-links {
-  margin-top: 0.7em;
+  margin-top: 0.5em;
 }
 
 .pub-links a {
   display: inline-block;
-  margin-right: 0.8em;
-  margin-bottom: 0.5em;
-  padding: 0.3em 0.9em;
-  background-color: #f3f4f6;
-  border-radius: 6px;
+  margin-right: 0.5em;
+  margin-bottom: 0.25em;
+  padding: 0.2em 0.6em;
+  background-color: #f5f5f5;
+  border-radius: 3px;
   text-decoration: none;
-  font-size: 0.9em;
-  color: #2563eb;
-  transition: all 0.2s;
+  font-size: 0.85em;
+  color: #0066cc;
   font-weight: 500;
 }
 
 .pub-links a:hover {
-  background-color: #2563eb;
-  color: white;
+  background-color: #e0e0e0;
   text-decoration: none;
-  transform: translateY(-1px);
 }
 
 .pub-abstract {
-  margin-top: 0.8em;
-  padding: 1em 1.2em;
-  background-color: #f9fafb;
-  border-left: 3px solid #e5e7eb;
-  border-radius: 4px;
-  font-size: 0.93em;
-  color: #4b5563;
-  line-height: 1.6;
+  margin-top: 0.5em;
+  padding: 0.75em 1em;
+  background-color: #fafafa;
+  border-left: 2px solid #e0e0e0;
+  border-radius: 2px;
+  font-size: 0.85em;
+  color: #666;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {
