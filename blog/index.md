@@ -38,9 +38,10 @@ permalink: /blog/
 }
 </style>
 
-{% if site.posts.size > 0 %}
+{% assign blog_posts = site.categories.blog | sort: 'date' | reverse %}
+{% if blog_posts.size > 0 %}
 <ul class="blog-list">
-  {% for post in site.posts %}
+  {% for post in blog_posts %}
   <li class="blog-item">
     <div class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</div>
     <div class="blog-content">
