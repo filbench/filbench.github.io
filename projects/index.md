@@ -35,11 +35,12 @@ permalink: /projects/
 }
 
 .project-title {
-  font-size: 1em;
+  font-size: 0.95em;
   font-weight: 600;
   color: #333;
   margin: 0;
   font-family: monospace;
+  line-height: 1.2;
 }
 
 .project-title a {
@@ -65,6 +66,8 @@ permalink: /projects/
   font-size: 0.9em;
 }
 </style>
+
+Below are some of our ongoing projects.
 
 {% assign projects = site.categories.projects | sort: 'date' | reverse %}
 {% if projects.size > 0 %}
