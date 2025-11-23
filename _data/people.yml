@@ -1,0 +1,24 @@
+# Team members
+# Add team members here with the following fields:
+# - name: Full name
+# - photo: Path to photo (place in /assets/images/people/)
+# - affiliation: University or organization
+# - research_interests: List of research interests
+# - website: (optional) Personal website URL
+
+- name: Jane Doe
+  photo: /assets/images/people/jane-doe.jpg
+  affiliation: University of the Philippines
+  research_interests:
+    - Natural Language Processing
+    - Machine Translation
+    - Low-resource Languages
+  website: https://example.com/janedoe
+
+- name: John Smith
+  photo: /assets/images/people/john-smith.jpg
+  affiliation: Ateneo de Manila University
+  research_interests:
+    - Computational Linguistics
+    - Sentiment Analysis
+    - Filipino Language Processing
