@@ -18,7 +18,7 @@
   website: https://ljvmiranda921.github.io
 
 - name: Joseph Imperial
-  photo: /assets/images/people/john-smith.jpg
+  photo: /assets/images/people/joseph.jpeg
   affiliation: University of Bath
   role: PhD Student
   research_interests:
@@ -28,11 +28,11 @@
   website: https://www.josephimperial.com/home
 
 - name: Blaise Cruz
-  photo: /assets/images/people/maria-cruz.jpg
+  photo: /assets/images/people/blaise.jpg
   affiliation: MBZUAI 
   role: PhD Student
   research_interests:
-    - Speech Recognition
     - Code-switching
-    - Multilingual NLP
-  website: https://example.com/mariacruz
+    - Resources & Evaluation
+    - NLP applications
+  website: https://blaisecruz.com/
