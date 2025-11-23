@@ -96,6 +96,8 @@ permalink: /people/
 }
 </style>
 
+We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.
+
 <ul class="people-list">
   {% for person in site.data.people %}
   <li class="person-card">
