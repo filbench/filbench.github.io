@@ -5,7 +5,7 @@ layout: home
 # We are a collective of Filipino NLP Researchers
 
 We are a collective of NLP researchers&mdash;graduate students, industry practitioners, and enthusiasts&mdash;working to advance natural language processing for Filipino languages through open research, datasets, and tools.
-
+We operate as a scrappy grassroots team, pooling shared resources to move fast and build what the research community needs.
 
 <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
   <a href="#" class="button">
