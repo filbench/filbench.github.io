@@ -34,3 +34,16 @@ By doing so, we aim to answer the following research questions:
 - **Task relevance**: Which tasks and capabilities are most valuable for Filipino-centric use cases? How can we ensure our instruction dataset covers the linguistic and cultural nuances that matter most to Filipino language users?
 
 ## How is it done today?
+
+
+## Who cares and will pay attention? 
+
+
+
+## What are the risks?
+
+
+## How long will it take?
+
+
+## What are the midterm and final checks?
