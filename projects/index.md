@@ -161,3 +161,79 @@ We are constantly **looking for collaborators**, especially those interested in 
 {% else %}
 <p>No projects yet.</p>
 {% endif %}
+
+## Frequently Asked Questions
+
+<style>
+.faq-section {
+  margin-top: 3em;
+}
+
+.faq-item {
+  margin-bottom: 0.75em;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background: #fafafa;
+}
+
+.faq-item summary {
+  padding: 0.75em 1em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #333;
+  list-style: none;
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::before {
+  content: "▶ ";
+  display: inline-block;
+  margin-right: 0.5em;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq-item summary:hover {
+  background: #f0f0f0;
+}
+
+.faq-answer {
+  padding: 0 1em 1em 2.5em;
+  font-size: 0.85em;
+  color: #666;
+  line-height: 1.5;
+}
+</style>
+
+<div class="faq-section">
+
+<details class="faq-item">
+  <summary>How are projects decided?</summary>
+  <div class="faq-answer">
+    Projects are proposed and discussed by community members based on identified gaps in Filipino NLP resources and current research needs. We prioritize projects that will have the most impact on advancing Philippine language technology and those that align with our members' expertise and interests.
+  </div>
+</details>
+
+<details class="faq-item">
+  <summary>How can I join a project?</summary>
+  <div class="faq-answer">
+    Click on any project above to see the skills needed and timeline. If you're interested, reach out to us through our contact channels with information about your background and which project interests you. We welcome collaborators at all levels, from students to experienced researchers.
+  </div>
+</details>
+
+<details class="faq-item">
+  <summary>I'm not a researcher, but how can I help?</summary>
+  <div class="faq-answer">
+    There are many ways to contribute! We need native speakers for annotation and validation, software engineers for tooling and infrastructure, designers for documentation, and advocates to help spread the word. Many of our tasks don't require research experience—just enthusiasm and dedication to Filipino language technology.
+  </div>
+</details>
+
+</div>
