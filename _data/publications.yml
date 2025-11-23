@@ -3,6 +3,7 @@
     authors: "Lester James V. Miranda*, Elyanah Aco*, Conner Manuel*, Jan Christian Blaise Cruz, Joseph Marvin Imperial"
     venue: "EMNLP 2025 (Main)"
     image: "/assets/images/publications/filbench.png"
+    abstract: "We created a comprehensive benchmark for evaluating LLMs on PH-centric tasks, including cultural knowledge, reading comprehension, classical NLP, and generation."
     links:
       - name: "PDF"
         url: "https://aclanthology.org/2025.emnlp-main.127/"
