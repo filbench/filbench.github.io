@@ -16,8 +16,7 @@
 title: FilBench 
 email: research-group@university.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Advancing the frontiers of knowledge through cutting-edge research in
-  machine learning, data systems, and computational science.
+    We are a collective of Filipino NLP researchers building resources, benchmarks, and models for Philippine languages.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: filbench
