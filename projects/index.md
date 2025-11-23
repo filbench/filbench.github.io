@@ -66,7 +66,7 @@ permalink: /projects/
 }
 </style>
 
-{% assign projects = site.projects | sort: 'date' | reverse %}
+{% assign projects = site.categories.projects | sort: 'date' | reverse %}
 {% if projects.size > 0 %}
 <ul class="projects-list">
   {% for project in projects %}

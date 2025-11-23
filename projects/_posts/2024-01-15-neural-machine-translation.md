@@ -3,6 +3,7 @@ layout: page
 title: Neural Machine Translation for Filipino Languages
 date: 2024-01-15
 description: Developing state-of-the-art neural machine translation models for low-resource Filipino languages, focusing on Tagalog, Cebuano, and Ilocano.
+categories: projects
 ---
 
 ## Overview

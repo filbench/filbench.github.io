@@ -3,6 +3,7 @@ layout: page
 title: Pre-trained Language Models for Filipino
 date: 2024-06-20
 description: Creating comprehensive pre-trained language models for Filipino languages to enable downstream NLP tasks and applications.
+categories: projects
 ---
 
 ## Overview

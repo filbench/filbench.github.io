@@ -32,12 +32,6 @@ header_pages:
   - blog/index.md
   - join.md
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:title/
-
 # Build settings
 markdown: kramdown
 theme: minima

@@ -3,6 +3,7 @@ layout: page
 title: Filipino Sentiment Analysis Toolkit
 date: 2023-09-10
 description: An open-source toolkit for sentiment analysis in Filipino social media text, handling code-switching and informal language.
+categories: projects
 ---
 
 ## Overview
