@@ -27,9 +27,16 @@ rss: rss
 # Navigation menu order
 header_pages:
   - about.md
-  - research.md
+  - projects/index.md
+  - publications.md
   - blog/index.md
   - join.md
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
 
 # Build settings
 markdown: kramdown
