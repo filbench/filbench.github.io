@@ -25,7 +25,7 @@ rss: rss
 
 # Navigation menu order
 header_pages:
-  - about.md
+  - people.md
   - projects/index.md
   - publications.md
   - blog/index.md

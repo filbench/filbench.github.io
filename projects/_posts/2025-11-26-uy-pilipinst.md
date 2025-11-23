@@ -11,4 +11,7 @@ skills:
   - Native language fluency
   - Data validation
 category: Instruction Tuning
+lead: Project Lead Name
+lead_email: lead@example.com
+lead_website: https://example.com
 ---

@@ -38,12 +38,28 @@ layout: page
 }
 </style>
 
-{% if page.category or page.expected_date_range or page.skills %}
+{% if page.category or page.lead or page.expected_date_range or page.skills %}
 <div class="project-meta">
   {% if page.category %}
   <div class="project-meta-item">
     <span class="project-meta-label">Category:</span>
     <span>{{ page.category }}</span>
+  </div>
+  {% endif %}
+
+  {% if page.lead %}
+  <div class="project-meta-item">
+    <span class="project-meta-label">Lead:</span>
+    <span>
+      {% if page.lead_website %}
+      <a href="{{ page.lead_website }}" target="_blank">{{ page.lead }}</a>
+      {% else %}
+      {{ page.lead }}
+      {% endif %}
+      {% if page.lead_email %}
+      (<a href="mailto:{{ page.lead_email }}">contact</a>)
+      {% endif %}
+    </span>
   </div>
   {% endif %}
 

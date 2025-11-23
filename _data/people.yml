@@ -1,0 +1,38 @@
+# Team members
+# Add team members here with the following fields:
+# - name: Full name (or nickname)
+# - photo: Path to photo (place in /assets/images/people/)
+# - affiliation: University or organization
+# - role: Their role in the group
+# - research_interests: List of research interests
+# - website: (optional) Personal website URL
+
+- name: Lj V. Miranda
+  photo: /assets/images/people/lj.jpg
+  affiliation: University of Cambridge
+  role: PhD Student
+  research_interests:
+    - Efficient NLP 
+    - Data-centric AI 
+    - Multilingual NLP and Post-training 
+  website: https://ljvmiranda921.github.io
+
+- name: Joseph Imperial
+  photo: /assets/images/people/joseph.jpeg
+  affiliation: University of Bath
+  role: PhD Student
+  research_interests:
+    - Standardization in AI
+    - Benchmarking and evaluation 
+    - Low-resource NLP 
+  website: https://www.josephimperial.com/home
+
+- name: Blaise Cruz
+  photo: /assets/images/people/blaise.jpg
+  affiliation: MBZUAI 
+  role: PhD Student
+  research_interests:
+    - Code-switching
+    - Resources & Evaluation
+    - NLP applications
+  website: https://blaisecruz.com/

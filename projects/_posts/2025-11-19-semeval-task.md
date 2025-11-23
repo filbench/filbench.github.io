@@ -11,4 +11,7 @@ skills:
   - Linguistic expertise
   - Task design
 category: Dataset Development
+lead: Project Lead Name
+lead_email: lead@example.com
+lead_website: https://example.com
 ---
