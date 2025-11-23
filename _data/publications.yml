@@ -32,14 +32,14 @@
     abstract: "We created the largest Tagalog treebank to date, containing 100x more data than previous treebanks. Our project also revealed limitations in the Universal Dependencies framework especially on non-Indo-European languages."
 
 2023:
-  - title: "Previous Year Publication Example"
-    authors: "Author 1, Author 2, and Author 3"
-    venue: "Conference Name (CONF) 2023"
-    image: "/assets/images/publications/sample-paper-3.svg"
+  - title: "calamanCy: A Tagalog Natural Language Processing Toolkit"
+    authors: "Lester James V. Miranda"
+    venue: "NLP OSS Workshop (NLP-OSS)"
+    image: "/assets/images/publications/calamancy.png"
     links:
       - name: "PDF"
-        url: "#"
-      - name: "Slides"
-        url: "#"
-      - name: "Video"
-        url: "#"
+        url: "https://aclanthology.org/2023.nlposs-1.1/"
+      - name: "Code"
+        url: "https://github.com/ljvmiranda921/calamanCy"
+      - name: "Website"
+        url: "https://ljvmiranda921.github.io/calamanCy/"
