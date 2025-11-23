@@ -27,3 +27,9 @@ This effort also paves the way for training our own Filipino-centric language mo
 We will curate a high-quality instruction-tuning data for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.
 By doing so, we aim to answer the following research questions:
 
+- **Data sourcing and composition**: Where can we find high-quality instruction data for Philippine languages? Should we prioritize synthetic generation, community platforms like Reddit, existing datasets, or a combination of these sources? What is the optimal mix of data sources to maximize quality and diversity?
+
+- **Data efficiency**: How much instruction-tuning data is needed to achieve strong performance on Filipino NLP benchmarks such as FilBench? Can we identify diminishing returns to guide efficient data collection efforts?
+
+- **Task relevance**: Which tasks and capabilities are most valuable for Filipino-centric use cases? How can we ensure our instruction dataset covers the linguistic and cultural nuances that matter most to Filipino language users?
+
