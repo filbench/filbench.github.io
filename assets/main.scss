@@ -1,0 +1,312 @@
+---
+---
+
+@import "minima";
+
+/* Reset Minima table styles completely */
+table,
+table tr,
+table th,
+table td {
+  border: none !important;
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* Custom font declarations */
+@font-face {
+  font-family: 'Univers';
+  src: url('/assets/fonts/Univers/UniversRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/assets/fonts/Univers/UniversLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url('/assets/fonts/Univers/UniversBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Berkeley Mono';
+  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Oblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Override all fonts to Univers */
+body {
+  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* All headings and titles use Univers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+.post-title,
+.page-heading,
+.post-list-heading {
+  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Code styling - minimal and elegant */
+
+/* Inline code - no background, just the font */
+code {
+  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #374151;
+  font-size: 0.9em;
+}
+
+/* Code blocks - clean with subtle left border */
+pre {
+  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  background-color: #fafafa !important;
+  border: none !important;
+  border-left: 3px solid #e5e7eb !important;
+  border-radius: 0 !important;
+  padding: 16px 20px !important;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+pre code {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: inherit;
+  font-size: 0.9em;
+}
+
+/* Syntax highlighting container */
+.highlight {
+  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  background-color: #fafafa !important;
+  border-left: 3px solid #e5e7eb !important;
+  border-radius: 0 !important;
+}
+
+.highlighter-rouge .highlight {
+  background-color: #fafafa !important;
+}
+
+/* Button styles with blue gradient inspired by sfcompute */
+button,
+.button,
+a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+button:visited,
+.button:visited,
+a.button:visited {
+  color: white;
+}
+
+button:hover,
+.button:hover,
+a.button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+  text-decoration: none;
+  color: white;
+}
+
+button:active,
+.button:active,
+a.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.button svg,
+.button img {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
+}
+
+/* Booktabs-style table styling - override minima defaults */
+table {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border: none !important;
+  color: #111 !important;
+  box-shadow: none !important;
+}
+
+/* Top border - thick and dark */
+table thead tr:first-child th {
+  border-top: 2px solid #111 !important;
+  padding-top: 8px;
+}
+
+/* Header styling - no background gradient, just clean text */
+table th {
+  padding: 8px 16px !important;
+  font-weight: 600;
+  text-align: left;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1.5px solid #111 !important;
+  background: transparent !important;
+}
+
+/* Table cells - no vertical borders, more compact */
+table td {
+  padding: 6px 16px !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+/* Alternating row colors for better readability */
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff !important;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9fafb !important;
+}
+
+/* Remove old minima table row styling */
+table tr:nth-child(even) {
+  background-color: transparent !important;
+}
+
+/* Remove hover effect - it's weird */
+table tbody tr {
+  transition: none;
+}
+
+table tbody tr:hover {
+  background-color: inherit !important;
+}
+
+/* Bottom border - thick and dark */
+table tbody tr:last-child td {
+  border-bottom: 2px solid #111 !important;
+  padding-bottom: 8px;
+}
+
+/* Update link colors to match blue theme */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:visited {
+  color: #1d4ed8;
+}
+
+a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* Update site header border to match blue theme */
+.site-header {
+  border-top: 5px solid #2563eb;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* Minimal footer styling */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 15px 0;
+  background-color: transparent;
+}
+
+.site-footer .wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.site-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer .footer-left,
+.site-footer .footer-right {
+  color: #828282;
+  font-size: 13px;
+  margin: 0;
+}
+
+.site-footer .footer-left {
+  text-align: left;
+}
+
+.site-footer .footer-right {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .site-footer .footer-content {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .site-footer .footer-left,
+  .site-footer .footer-right {
+    text-align: center;
+  }
+}

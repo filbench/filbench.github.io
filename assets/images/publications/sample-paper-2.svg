@@ -1,0 +1,24 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#f0fdf4"/>
+
+  <!-- Network nodes -->
+  <circle cx="150" cy="100" r="25" fill="#10b981" opacity="0.8"/>
+  <circle cx="80" cy="60" r="20" fill="#34d399" opacity="0.8"/>
+  <circle cx="220" cy="60" r="20" fill="#34d399" opacity="0.8"/>
+  <circle cx="80" cy="140" r="20" fill="#34d399" opacity="0.8"/>
+  <circle cx="220" cy="140" r="20" fill="#34d399" opacity="0.8"/>
+  <circle cx="40" cy="100" r="15" fill="#6ee7b7" opacity="0.8"/>
+  <circle cx="260" cy="100" r="15" fill="#6ee7b7" opacity="0.8"/>
+
+  <!-- Connections -->
+  <line x1="150" y1="100" x2="80" y2="60" stroke="#059669" stroke-width="2" opacity="0.6"/>
+  <line x1="150" y1="100" x2="220" y2="60" stroke="#059669" stroke-width="2" opacity="0.6"/>
+  <line x1="150" y1="100" x2="80" y2="140" stroke="#059669" stroke-width="2" opacity="0.6"/>
+  <line x1="150" y1="100" x2="220" y2="140" stroke="#059669" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="60" x2="40" y2="100" stroke="#059669" stroke-width="2" opacity="0.4"/>
+  <line x1="220" y1="60" x2="260" y2="100" stroke="#059669" stroke-width="2" opacity="0.4"/>
+
+  <!-- Title placeholder -->
+  <rect x="20" y="10" width="140" height="15" fill="#047857" rx="2" opacity="0.3"/>
+</svg>
