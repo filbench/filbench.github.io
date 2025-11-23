@@ -138,6 +138,21 @@ We are constantly **looking for collaborators**, especially those interested in 
       {% if project.category %}
       <span class="category-badge">{{ project.category }}</span>
       {% endif %}
+      {% if project.lead %}
+      <div class="metadata-item">
+        <span class="metadata-label">Lead:</span>
+        <span class="metadata-value">
+          {% if project.lead_website %}
+          <a href="{{ project.lead_website }}" target="_blank">{{ project.lead }}</a>
+          {% else %}
+          {{ project.lead }}
+          {% endif %}
+          {% if project.lead_email %}
+          (<a href="mailto:{{ project.lead_email }}">contact</a>)
+          {% endif %}
+        </span>
+      </div>
+      {% endif %}
       {% if project.expected_date_range %}
       <div class="metadata-item">
         <span class="metadata-label">Timeline:</span>
