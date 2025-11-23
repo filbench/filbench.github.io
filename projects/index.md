@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
+hide_title: true
 ---
 
 <style>
@@ -11,34 +12,33 @@ permalink: /projects/
 }
 
 .project-item {
-  margin-bottom: 1.25em;
-  padding: 1em;
-  background: #fafafa;
-  border-radius: 6px;
-  border-left: 3px solid #d1d5db;
-  transition: border-color 0.2s;
+  margin-bottom: 1.5em;
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1em;
 }
 
-.project-item:hover {
-  border-left-color: #9ca3af;
+.project-item:last-child {
+  border-bottom: none;
 }
 
 .project-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.25em;
 }
 
 .project-title {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
-  color: #111827;
+  color: #333;
   margin: 0;
+  font-family: monospace;
 }
 
 .project-title a {
-  color: #111827;
+  color: #0066cc;
   text-decoration: none;
 }
 
@@ -47,16 +47,17 @@ permalink: /projects/
 }
 
 .project-date {
-  color: #9ca3af;
+  color: #999;
   font-size: 0.85em;
   flex-shrink: 0;
   margin-left: 1em;
+  font-family: monospace;
 }
 
 .project-description {
-  color: #6b7280;
-  line-height: 1.5;
-  font-size: 0.95em;
+  color: #666;
+  line-height: 1.4;
+  font-size: 0.9em;
 }
 </style>
 
