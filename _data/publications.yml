@@ -1,0 +1,40 @@
+2024:
+  - title: "Title of Your Research Paper"
+    authors: "Author 1, Author 2, and Author 3"
+    venue: "Conference Name (CONF) 2024"
+    image: "/assets/images/publications/sample-paper-1.svg"
+    links:
+      - name: "PDF"
+        url: "#"
+      - name: "arXiv"
+        url: "#"
+      - name: "Code"
+        url: "#"
+      - name: "BibTeX"
+        url: "#"
+
+  - title: "Another Research Paper Title"
+    authors: "Author 1, Author 2, and Author 3"
+    venue: "Journal Name, Volume(Issue), 2024"
+    image: "/assets/images/publications/sample-paper-2.svg"
+    links:
+      - name: "PDF"
+        url: "#"
+      - name: "DOI"
+        url: "#"
+      - name: "Code"
+        url: "#"
+    abstract: "Optional abstract text that provides more detail about the research. This can be shown or hidden based on preference."
+
+2023:
+  - title: "Previous Year Publication Example"
+    authors: "Author 1, Author 2, and Author 3"
+    venue: "Conference Name (CONF) 2023"
+    image: "/assets/images/publications/sample-paper-3.svg"
+    links:
+      - name: "PDF"
+        url: "#"
+      - name: "Slides"
+        url: "#"
+      - name: "Video"
+        url: "#"

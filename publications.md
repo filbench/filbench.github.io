@@ -119,67 +119,34 @@ permalink: /publications/
 </style>
 
 <div class="publications">
+{% for year_data in site.data.publications %}
+  {% assign year = year_data[0] %}
+  {% assign pubs = year_data[1] %}
 
-<div class="year-group">
-  <div class="year-heading">2024</div>
+  <div class="year-group">
+    <div class="year-heading">{{ year }}</div>
 
-  <div class="publication">
-    <div class="pub-image">
-      <img src="{{ '/assets/images/publications/sample-paper-1.svg' | relative_url }}" alt="Paper visualization">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Title of Your Research Paper</div>
-      <div class="pub-authors">Author 1, Author 2, and Author 3</div>
-      <div class="pub-venue">Conference Name (CONF) 2024</div>
-      <div class="pub-links">
-        <a href="#">PDF</a>
-        <a href="#">arXiv</a>
-        <a href="#">Code</a>
-        <a href="#">BibTeX</a>
+    {% for pub in pubs %}
+    <div class="publication">
+      <div class="pub-image">
+        <img src="{{ pub.image | relative_url }}" alt="Paper visualization">
+      </div>
+      <div class="pub-content">
+        <div class="pub-title">{{ pub.title }}</div>
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-venue">{{ pub.venue }}</div>
+        <div class="pub-links">
+          {% for link in pub.links %}
+          <a href="{{ link.url }}">{{ link.name }}</a>
+          {% endfor %}
+        </div>
+        {% if pub.abstract %}
+        <div class="pub-abstract">{{ pub.abstract }}</div>
+        {% endif %}
       </div>
     </div>
+    {% endfor %}
+
   </div>
-
-  <div class="publication">
-    <div class="pub-image">
-      <img src="{{ '/assets/images/publications/sample-paper-2.svg' | relative_url }}" alt="Paper visualization">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Another Research Paper Title</div>
-      <div class="pub-authors">Author 1, Author 2, and Author 3</div>
-      <div class="pub-venue">Journal Name, Volume(Issue), 2024</div>
-      <div class="pub-links">
-        <a href="#">PDF</a>
-        <a href="#">DOI</a>
-        <a href="#">Code</a>
-      </div>
-      <div class="pub-abstract">
-        Optional abstract text that provides more detail about the research. This can be shown or hidden based on preference.
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="year-group">
-  <div class="year-heading">2023</div>
-
-  <div class="publication">
-    <div class="pub-image">
-      <img src="{{ '/assets/images/publications/sample-paper-3.svg' | relative_url }}" alt="Paper visualization">
-    </div>
-    <div class="pub-content">
-      <div class="pub-title">Previous Year Publication Example</div>
-      <div class="pub-authors">Author 1, Author 2, and Author 3</div>
-      <div class="pub-venue">Conference Name (CONF) 2023</div>
-      <div class="pub-links">
-        <a href="#">PDF</a>
-        <a href="#">Slides</a>
-        <a href="#">Video</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
+{% endfor %}
 </div>
