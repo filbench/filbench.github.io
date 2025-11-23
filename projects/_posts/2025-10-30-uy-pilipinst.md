@@ -22,5 +22,8 @@ It is relatively cheap and straightforward, which is why most foundation model p
 Since most foundation model providers rely on open-source datasets to train their models, we can indirectly influence their development pipelines by **contributing a high-quality instruction-tuning dataset to the open ecosystem**.
 This effort also paves the way for training our own Filipino-centric language models.
 
-
 ## What exactly are we trying to do?
+
+We will curate a high-quality instruction-tuning data for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.
+By doing so, we aim to answer the following research questions:
+
