@@ -113,7 +113,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   <div class="home-section">
     <h2>News</h2>
     <ul class="news-list">
-      {% for item in site.data.news %}
+      {% for item in site.data.news limit:4 %}
       <li class="news-item">
         <div class="news-header">
           <div class="news-date">{{ item.date }}</div>
