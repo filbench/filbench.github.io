@@ -1,8 +1,8 @@
 - date: "Aug 2025"
-  content: "Our paper, <a href='https://aclanthology.org/2025.emnlp-main.127/'>FilBench: Do LLMs Understand or Generate Filipino?</a> will be presented in EMNLP 2025 Main!"
+  content: "Our paper, <a href='https://aclanthology.org/2025.emnlp-main.127/'>FilBench: Do LLMs Understand or Generate Filipino?</a> will be presented at EMNLP 2025 Main!"
 
-- date: "Oct 2024"
-  content: "Released <a href='#'>FilBERT v2.0</a> with improved performance on downstream tasks."
+- date: "May 2025"
+  content: "A collaboration work with UP Diliman on the <a href='https://aclanthology.org/2025.acl-long.357/'>UD-NewsCrawl treebank</a> will be presented at ACL 2025 in Vienna."
 
 - date: "Sep 2024"
   content: "New dataset available: <a href='#'>Filipino Social Media Corpus</a> with 10M annotated posts."
