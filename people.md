@@ -14,6 +14,12 @@ permalink: /people/
   gap: 1em;
 }
 
+@media (max-width: 768px) {
+  .people-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .person-card {
   padding: 0.5em;
   border: 1px solid #e8e8e8;
