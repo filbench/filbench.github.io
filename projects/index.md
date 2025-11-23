@@ -2,10 +2,15 @@
 layout: page
 title: Projects
 permalink: /projects/
-hide_title: true
 ---
 
 <style>
+.page-content h1:first-child,
+.page-heading,
+.post-title {
+  display: none;
+}
+
 .projects-list {
   list-style: none;
   padding: 0;
