@@ -4,7 +4,7 @@ title: Uy PilipINST! Creating an instruction-tuning dataset for Philippine langu
 date: 2025-10-30
 description: We plan to create a high-quality instruction-tuning dataset for the four widely spoken PH languages (Tagalog, Cebuano, Ilocano, Hiligaynon), with around 10k samples per language. 
 categories: projects
-expected_date_range: Feb 2026 - Jan 2027 
+expected_date_range: Starts on Mar 2026 
 skills:
   - Instruction Tuning
   - Data Collection and Curation
@@ -24,12 +24,13 @@ This effort also paves the way for training our own Filipino-centric language mo
 
 ## What exactly are we trying to do?
 
-We will curate a high-quality instruction-tuning data for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.
+We will curate a **high-quality instruction-tuning dataset** for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.
 By doing so, we aim to answer the following research questions:
 
 - **Data sourcing and composition**: Where can we find high-quality instruction data for Philippine languages? Should we prioritize synthetic generation, community platforms like Reddit, existing datasets, or a combination of these sources? What is the optimal mix of data sources to maximize quality and diversity?
 
-- **Data efficiency**: How much instruction-tuning data is needed to achieve strong performance on Filipino NLP benchmarks such as FilBench? Can we identify diminishing returns to guide efficient data collection efforts?
+- **Data efficiency**: How much instruction-tuning data is needed to achieve strong performance on Filipino NLP benchmarks such as [FilBench](https://aclanthology.org/2025.emnlp-main.127/)? Can we identify diminishing returns to guide efficient data collection efforts?
 
 - **Task relevance**: Which tasks and capabilities are most valuable for Filipino-centric use cases? How can we ensure our instruction dataset covers the linguistic and cultural nuances that matter most to Filipino language users?
 
+## How is it done today?
