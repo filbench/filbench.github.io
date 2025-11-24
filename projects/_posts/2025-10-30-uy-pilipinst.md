@@ -46,7 +46,8 @@ If you're interested to contribute / collaborate, you can read the full research
 | [Google Drive](https://drive.google.com/drive/folders/1h_kGdyGzlax4BvJGcPAm09nnR-8Fr7aG?usp=drive_link) | Shared folder containing other materials. | 
 
 
-## How do I join?
+## I want to help out!
 
 [Reach out](https://calendar.app.google/YsYYEYWKPZmaUieK6) to me (Lj) first!
-This is a smaller project (with the benchmark project the bigger one), and I prefer a more focused team.
+This is a smaller project (with the [benchmark project](/projects/2025/11/19/semeval-task/) the bigger one), and I prefer a more focused team with 2-3 people including me.
+I'm also happy to receive support in the form of **compute credits and grants** (if you know of any, please point them our way)!
