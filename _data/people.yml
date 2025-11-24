@@ -36,3 +36,15 @@
     - Resources & Evaluation
     - NLP applications
   website: https://blaisecruz.com/
+
+- name: Elyanah Aco
+  photo: /assets/images/people/elyanah.jpeg
+  affiliation: Nara Institute of Science and Technology
+  role: MS Student
+  website: https://www.linkedin.com/in/elyanahaco2000/
+
+- name: Conner Manuel
+  photo: /assets/images/people/conner.jpeg
+  affiliation: Together AI
+  role: MLE
+  website: https://www.linkedin.com/in/connermanuel/
