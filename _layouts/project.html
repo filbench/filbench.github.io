@@ -38,12 +38,12 @@ layout: page
 }
 </style>
 
-{% if page.category or page.lead or page.expected_date_range or page.skills %}
+{% if page.project_category or page.lead or page.expected_date_range or page.skills %}
 <div class="project-meta">
-  {% if page.category %}
+  {% if page.project_category %}
   <div class="project-meta-item">
     <span class="project-meta-label">Category:</span>
-    <span>{{ page.category }}</span>
+    <span>{{ page.project_category }}</span>
   </div>
   {% endif %}
 

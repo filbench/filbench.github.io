@@ -120,7 +120,8 @@ We are constantly **looking for collaborators**, especially those interested in 
 
 &nbsp;
 
-{% assign projects = site.categories.projects | sort: 'date' | reverse %}
+{% assign all_posts = site.posts | where_exp: "post", "post.path contains 'projects/_posts'" %}
+{% assign projects = all_posts | sort: 'date' | reverse %}
 {% if projects.size > 0 %}
 <ul class="projects-list">
   {% for project in projects %}
@@ -135,8 +136,8 @@ We are constantly **looking for collaborators**, especially those interested in 
     <div class="project-description">{{ project.description }}</div>
     {% endif %}
     <div class="project-metadata">
-      {% if project.category %}
-      <span class="category-badge">{{ project.category }}</span>
+      {% if project.project_category %}
+      <span class="category-badge">{{ project.project_category }}</span>
       {% endif %}
       {% if project.lead %}
       <div class="metadata-item">
