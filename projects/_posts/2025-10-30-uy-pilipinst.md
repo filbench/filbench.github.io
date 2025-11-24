@@ -39,28 +39,11 @@ We have a loose timeline, but we plan to officially start the project on Februar
 We don't have a publication target (yet), most of our findings will be shared through a technical report on arXiV.
 If you're interested to contribute / collaborate, you can read the full research brief (and other materials) in the links below:
 
-- **Research Brief**: 
+| Document | Description |
+|---------------|-------------|
+| [Research Brief](https://docs.google.com/document/d/1FVD7Ywrc9-hGyDOxV5nRw0QeC98H2mTPjK-vfWJPbqI/edit?usp=sharing) | Research proposal. |
+| [Project Journal](https://docs.google.com/presentation/d/12IKq5M1c9GuQEMjNshk0QlObZQu-EDb5nhfa5AhgYFg/edit?usp=sharing) | Running log of project progress. |
+| [Google Drive](https://drive.google.com/drive/folders/1h_kGdyGzlax4BvJGcPAm09nnR-8Fr7aG?usp=drive_link) | Shared folder containing other materials. | 
 
 
-<!-- ## How is it done today?
-
-Here is how other language communities did it:
-
-
-## Who cares and will pay attention? 
-
-
-
-## What are the risks?
-
-One potential risk is not finding a decent source of instruction-tuning data for non-Tagalog languages.
-We can solve this by using a machine translation system (e.g., [NLLB](https://huggingface.co/docs/transformers/en/model_doc/nllb) or Google Translate API) to translate from English/Tagalog to another language, and refining the output via human annotation.
-
-## How long will it take?
-
-
-## What are the midterm and final checks?
-
-
-
-## What are the stretch goals?  -->
+## How do I join?
