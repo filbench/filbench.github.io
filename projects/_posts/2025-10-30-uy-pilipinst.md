@@ -4,7 +4,7 @@ title: Uy PilipINST! Creating an instruction-tuning dataset for Philippine langu
 date: 2025-10-30
 description: We plan to create a high-quality instruction-tuning dataset for the four widely spoken PH languages (Tagalog, Cebuano, Ilocano, Hiligaynon), with around 10k samples per language. 
 categories: projects
-expected_date_range: Starts on Mar 2026 
+expected_date_range: Starts on Feb 2026 
 skills:
   - Instruction Tuning
   - Data Collection and Curation
@@ -22,9 +22,9 @@ It is relatively cheap and straightforward, which is why most foundation model p
 Since most foundation model providers rely on open-source datasets to train their models, we can indirectly influence their development pipelines by **contributing a high-quality instruction-tuning dataset to the open ecosystem**.
 This effort also paves the way for training our own Filipino-centric language models.
 
-## What exactly are we trying to do?
+## What exactly are we trying to do? 
 
-We will curate a **high-quality instruction-tuning dataset** for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.
+Specifically, we will curate a **high-quality instruction-tuning dataset for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.**
 By doing so, we aim to answer the following research questions:
 
 - **Data sourcing and composition**: Where can we find high-quality instruction data for Philippine languages? Should we prioritize synthetic generation, community platforms like Reddit, existing datasets like [Aya](https://huggingface.co/collections/CohereLabs/aya-datasets), or a combination of these sources? What is the optimal mix of data sources to maximize quality and diversity?
@@ -33,11 +33,19 @@ By doing so, we aim to answer the following research questions:
 
 - **Task relevance**: Which tasks and capabilities are most valuable for Filipino-centric use cases? How can we ensure our instruction dataset covers the linguistic and cultural nuances that matter most to Filipino language users?
 
-## How is it done today?
+## Other links and timelines
+
+We have a loose timeline, but we plan to officially start the project on February 2026.
+We don't have a publication target (yet), most of our findings will be shared through a technical report on arXiV.
+If you're interested to contribute / collaborate, you can read the full research brief (and other materials) in the links below:
+
+- **Research Brief**: 
+
+
+<!-- ## How is it done today?
 
 Here is how other language communities did it:
 
-<!-- add table -->
 
 ## Who cares and will pay attention? 
 
@@ -55,4 +63,4 @@ We can solve this by using a machine translation system (e.g., [NLLB](https://hu
 
 
 
-## What are the stretch goals? 
+## What are the stretch goals?  -->
