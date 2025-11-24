@@ -48,3 +48,5 @@ If you're interested to contribute / collaborate, you can read the full research
 
 ## How do I join?
 
+[Reach out](https://calendar.app.google/YsYYEYWKPZmaUieK6) to me (Lj) first!
+This is a smaller project (with the benchmark project the bigger one), and I prefer a more focused team.
