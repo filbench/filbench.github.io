@@ -38,7 +38,6 @@ permalink: /people/
   height: 60px;
   border-radius: 3px;
   object-fit: cover;
-  filter: grayscale(100%);
   flex-shrink: 0;
 }
 
