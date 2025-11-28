@@ -18,7 +18,18 @@ I still remember cold-emailing [Blaise](https://blaisecruz.com/) and sharing [in
 Through him, I got connected with [Joseph](https://www.josephimperial.com/home), whose works I've been reading for quite a while.
 I still remember us meeting in person back in 2023, and I guess the rest is history!
 
+Fast-forward to 2025, across many life events, I also met Ely and Conner through cold emails.
+We started with an annotation project that didn't really materialize, but we pivoted into a more impactful project on language model evaluation.
+That project soon turned into FilBench, and together with Joseph and Blaise, it was published in EMNLP Main!
+
+I know it's confusing to call the evaluation benchmark FilBench and then this *collective* as FilBench.[^2]
+
+
+
 
 
 
 [^1]: During the pre-LLM era, [spaCy](https://spacy.io/) was very useful and popular in building linguistic processing pipelines for tasks such as named-entity recognition, dependency parsing, and classification.  
+
+[^2]: I actually renamed all instances of the benchmark into **FilBench-Eval** just to lessen the confusion.
+
