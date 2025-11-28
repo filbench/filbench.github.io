@@ -15,7 +15,6 @@ lead_email: ljvm2@cam.ac.uk
 lead_website: https://ljvmiranda921.github.io/
 ---
 
-
 Instruction-tuning (or supervised fine-tuning, SFT) is a method to further refine a model's capabilities for specific tasks or languages.
 It is relatively cheap and straightforward, which is why most foundation model providers include instruction-tuned models in their releases.
 
