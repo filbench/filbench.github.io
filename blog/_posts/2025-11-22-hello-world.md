@@ -3,8 +3,11 @@ layout: post
 title:  "Come sit with us at the FilBench!"
 date:   2025-11-22
 authors: [ljvm]
-description: A quick introduction to Jekyll and how to get started with your first blog post
+description:  
 categories: blog
 ---
 
-In 
+I have high hopes for Filipino NLP. 
+
+Three years ago, I don't have any involvement in the Filipino NLP space.
+
