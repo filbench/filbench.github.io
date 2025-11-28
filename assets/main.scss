@@ -332,3 +332,59 @@ a:hover {
   object-fit: cover;
   border: 1.5px solid #e5e7eb;
 }
+
+/* Sidenote styling - Tufte-inspired */
+.post-content {
+  position: relative;
+}
+
+/* Sidenote positioning */
+.sidenote {
+  float: right;
+  clear: right;
+  margin-right: -280px;
+  width: 240px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #6b7280;
+  position: relative;
+}
+
+/* Make sure post pages have space for sidenotes */
+.post .wrapper {
+  max-width: calc(800px + 280px);
+  padding-right: 300px;
+}
+
+/* Style footnote references */
+sup[id^="fnref"] a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+sup[id^="fnref"] a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive - show footnotes normally on smaller screens */
+@media (max-width: 1200px) {
+  .sidenote {
+    display: none;
+  }
+
+  .post .wrapper {
+    max-width: 800px;
+    padding-right: 30px;
+  }
+
+  .footnotes {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+}
