@@ -22,10 +22,23 @@ Fast-forward to 2025, across many life events and other collaborations, I also m
 We started with an annotation project that didn't really materialize, but we pivoted into a more impactful project on language model evaluation.
 That project soon turned into FilBench, and together with Joseph and Blaise, it was published in EMNLP Main!
 
-I know it's confusing to call both the evaluation benchmark and this *collective* as FilBench[^2], though it's quite apt (and fortuitous if I may add!).
+I know it's confusing to call both the evaluation benchmark and this *collective* as FilBench,[^2] though I find it quite apt (and fortuitous if I may add!).
 Back in my undergrad, I remember the idea of "org benches" where people hang out to do work.
 There was something special about having a designated bench, where people could gather, plan, and collaborate.
 That's what I think FilBench represents: a bench for Filipino NLP researchers to call home.
+
+In my FilBench-Eval [blog post](https://ljvmiranda921.github.io/projects/2025/08/21/filbench/#on-building-filbench), I mentioned that hopefully next time there will be more of us. 
+I'm happy to see it come into fruition: our first meeting to plan out our [future projects](/projects/) had a nice turnout!
+Who would've thought that in just three years, there's more than ten (!) people willing to collaborate with us.
+We also have a very chill [Discord group](/join/) with other Filipino NLP researchers.
+
+This collective is not a non-profit, for-profit, or a research institute.
+We are PhD students, software engineers, enthusiasts who have shared interests in improving the state of Filipino NLP through open research, tools, and datasets.
+I've seen grassroots efforts worked well in other language communities such as [Masakhane](https://www.masakhane.io/), [SEACrowd](https://seacrowd.github.io/), and [IndoNLP](https://indonlp.github.io/)&mdash; I believe it's possible to do this here.
+
+
+
+
 
 
 
