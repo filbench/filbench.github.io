@@ -14,13 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: FilBench 
-email: research-group@university.edu
+email: filbench@googlegroups.com
 description: >- # this means to ignore newlines until "baseurl:"
     We are a collective of Filipino NLP researchers building resources, benchmarks, and models for Philippine languages.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://filbench.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+timeone: Asia/Manila
 github_username: filbench
-huggingface_username: UD-Filipino
+huggingface_username: filbench
 rss: rss
 
 # Navigation menu order
