@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Come sit with us at the FilBench!"
-date:   2025-11-22
+title: "Come sit with us at the FilBench!"
+date: 2025-11-22
 authors: [ljvm]
 description:  
 categories: blog
