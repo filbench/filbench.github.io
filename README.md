@@ -30,7 +30,8 @@ Then, edit the `_data/people.yml` and supply your information:
 # In general, use short versions of your affiliation and roles
 # The space is a bit tight (three-columns), so we want things to render nicely
 # in the website.
-- name: Your name
+- id: Your initials (lower-case) #  If there's someone with a similar initial, append a number (e.g., ljvm -> ljvm2, aa9 -> aa10).
+  name: Your name
   photo: /assets/images/people/yourimage.jpg
   affiliation: Your affiliation # Use the short version of your affiliation
   role: Your role #  Use the short version (PhD Student, Asst. Prof., MLE)
