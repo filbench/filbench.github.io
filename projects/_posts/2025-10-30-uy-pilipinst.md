@@ -54,5 +54,6 @@ If you're interested to contribute / collaborate, you can read the full research
 ## I want to help out!
 
 [Reach out](https://calendar.app.google/YsYYEYWKPZmaUieK6) to me (Lj) first!
-This is a smaller project (with the [benchmark project](/projects/2025/11/19/semeval-task/) the bigger one), and I prefer a more focused team with 2-3 people including me.
+Although the official project will start mid-2026, I plan to start some experiments as early as January.
+During that time, this will be a smaller effort compared to the [benchmark project](/projects/2025/11/19/semeval-task/), and I prefer a more focused team with 3 people including me.
 I'm also happy to receive support in the form of **compute credits and grants** (if you know of any, please point them our way)!
