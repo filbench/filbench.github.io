@@ -22,7 +22,7 @@ Fast-forward to 2025, across many life events and other collaborations, I also m
 We started with an annotation project that didn't really materialize, but we pivoted into a more impactful project on language model evaluation.
 That project soon turned into FilBench, and together with Joseph and Blaise, it was published in EMNLP Main!
 
-I know it's confusing to call both the evaluation benchmark and this *collective* as FilBench[^2], though it's quite apt.
+I know it's confusing to call both the evaluation benchmark and this *collective* as FilBench[^2], though it's quite apt (and fortuitous if I may add!).
 Back in my undergrad, I remember the idea of "org benches" where people hang out to do work.
 There was something special about having a designated bench, where people could gather, plan, and collaborate.
 That's what I think FilBench represents: a bench for Filipino NLP researchers to call home.
