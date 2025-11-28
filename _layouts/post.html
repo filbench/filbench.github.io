@@ -11,28 +11,27 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.authors -%}
-        <br/>
-        <span class="post-authors">
-          {%- for author_id in page.authors -%}
-            {%- assign author_data = site.data.people | where: "id", author_id | first -%}
-            {%- if author_data -%}
-              <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <img src="{{ author_data.photo | relative_url }}" alt="{{ author_data.name }}" class="author-photo" />
-                <span class="p-author h-card" itemprop="name">
-                  {%- if author_data.website -%}
-                    <a href="{{ author_data.website }}" target="_blank" rel="noopener">{{ author_data.name }}</a>
-                  {%- else -%}
-                    {{ author_data.name }}
-                  {%- endif -%}
-                </span>
+        •
+        {%- for author_id in page.authors -%}
+          {%- assign author_data = site.data.people | where: "id", author_id | first -%}
+          {%- if author_data -%}
+            <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <img src="{{ author_data.photo | relative_url }}" alt="{{ author_data.name }}" class="author-photo" />
+              <span class="p-author h-card" itemprop="name">
+                {%- if author_data.website -%}
+                  <a href="{{ author_data.website }}" target="_blank" rel="noopener">{{ author_data.name }}</a>
+                {%- else -%}
+                  {{ author_data.name }}
+                {%- endif -%}
               </span>
-            {%- else -%}
-              <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span class="p-author h-card" itemprop="name">{{ author_id }}</span>
-              </span>
-            {%- endif -%}
-          {%- endfor -%}
-        </span>
+            </span>
+          {%- else -%}
+            <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+              <span class="p-author h-card" itemprop="name">{{ author_id }}</span>
+            </span>
+          {%- endif -%}
+          {%- unless forloop.last -%}, {%- endunless -%}
+        {%- endfor -%}
       {%- endif -%}</p>
   </header>
 
