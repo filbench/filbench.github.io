@@ -13,7 +13,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     Code
     <span style="margin-left: 4px;">→</span>
   </a>
-  <a href="https://huggingface.co/UD-Filipino" class="button">
+  <a href="https://huggingface.co/filbench" class="button">
     <img src="{{ '/assets/icons/huggingface.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
     Resources
     <span style="margin-left: 4px;">→</span>
