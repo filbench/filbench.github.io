@@ -24,8 +24,13 @@ This effort also paves the way for training our own Filipino-centric language mo
 
 ## What exactly are we trying to do? 
 
-Specifically, we will curate a **high-quality instruction-tuning dataset for the top four (4) spoken Philippine languages: Tagalog, Cebuano, Ilokano, and Hiligaynon.**
-By doing so, we aim to answer the following research questions:
+Specifically, we will curate a **high-quality instruction-tuning dataset for the top four to six (4-6) spoken Philippine languages**: Tagalog, Bisaya, Hiligaynon, Ilokano, Cebuano, and Bikolano.
+
+Ultimately, we want to answer the following question: 
+
+> How does post-training data composition&mdash;synthetic, human-annotated, or web-crawled&mdash; affect LLM performance on FilBench, under a low annotation budget?
+
+By doing so, we aim to explore the following aspects:
 
 - **Data sourcing and composition**: Where can we find high-quality instruction data for Philippine languages? Should we prioritize synthetic generation, community platforms like Reddit, existing datasets like [Aya](https://huggingface.co/collections/CohereLabs/aya-datasets), or a combination of these sources? What is the optimal mix of data sources to maximize quality and diversity?
 
