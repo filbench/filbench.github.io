@@ -22,7 +22,8 @@ Fast-forward to 2025, across many life events, I also met Ely and Conner through
 We started with an annotation project that didn't really materialize, but we pivoted into a more impactful project on language model evaluation.
 That project soon turned into FilBench, and together with Joseph and Blaise, it was published in EMNLP Main!
 
-I know it's confusing to call the evaluation benchmark FilBench and then this *collective* as FilBench.[^2]
+I know it's confusing to call both the evaluation benchmark FilBench and this *collective* as FilBench[^2], though it's quite apt.
+Back in my undergrad, I remember the idea of "org benches" where people hang out and do work.
 
 
 
