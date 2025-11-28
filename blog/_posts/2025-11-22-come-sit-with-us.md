@@ -34,11 +34,8 @@ We also have a very chill [Discord group](/join/) with other Filipino NLP resear
 
 This collective is not a non-profit, for-profit, or a research institute.
 We are PhD students, software engineers, enthusiasts who have shared interests in improving the state of Filipino NLP through open research, tools, and datasets.
-I've seen grassroots efforts worked well in other language communities such as [Masakhane](https://www.masakhane.io/), [SEACrowd](https://seacrowd.github.io/), and [IndoNLP](https://indonlp.github.io/)&mdash; I believe it's possible to do this here.
-
-
-
-
+I've seen grassroots efforts worked well in other language communities such as [Masakhane](https://www.masakhane.io/), [SEACrowd](https://seacrowd.github.io/), and [IndoNLP](https://indonlp.github.io/)&mdash; I believe it's possible to do the same thing here.
+I hope the momentum continues.
 
 
 
