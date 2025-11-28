@@ -4,7 +4,7 @@ title: Uy PilipINST! Creating an instruction-tuning dataset for Philippine langu
 date: 2025-10-30
 description: We plan to create a high-quality instruction-tuning dataset for the four widely spoken PH languages (Tagalog, Cebuano, Ilocano, Hiligaynon), with around 10k samples per language. 
 categories: projects
-expected_date_range: Starts on Feb 2026 
+expected_date_range: (prelim) Feb 2026, (official) mid 2026
 skills:
   - Instruction Tuning
   - Data Collection and Curation
