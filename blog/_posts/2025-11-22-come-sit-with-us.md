@@ -37,9 +37,7 @@ We are PhD students, software engineers, enthusiasts who have shared interests i
 I've seen grassroots efforts worked well in other language communities such as [Masakhane](https://www.masakhane.io/), [SEACrowd](https://seacrowd.github.io/), and [IndoNLP](https://indonlp.github.io/)&mdash; I believe it's possible to do the same thing here.
 I hope the momentum continues.
 
-
-
-
+Kaya, tara! Come sit with us at the FilBench!
 
 
 [^1]: During the pre-LLM era, [spaCy](https://spacy.io/) was very useful and popular in building linguistic processing pipelines for tasks such as named-entity recognition, dependency parsing, and classification.  
