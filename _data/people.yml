@@ -1,5 +1,6 @@
 # Team members
 # Add team members here with the following fields:
+# - id: Unique identifier (use initials, e.g., ljvm, ji, bc)
 # - name: Full name (or nickname)
 # - photo: Path to photo (place in /assets/images/people/)
 # - affiliation: University or organization
@@ -7,29 +8,32 @@
 # - research_interests: List of research interests
 # - website: (optional) Personal website URL
 
-- name: Lj V. Miranda
+- id: ljvm
+  name: Lj V. Miranda
   photo: /assets/images/people/lj.jpg
   affiliation: University of Cambridge
   role: PhD Student
   research_interests:
-    - Efficient NLP 
-    - Data-centric AI 
-    - Multilingual NLP and Post-training 
+    - Efficient NLP
+    - Data-centric AI
+    - Multilingual NLP and Post-training
   website: https://ljvmiranda921.github.io
 
-- name: Joseph Imperial
+- id: ji
+  name: Joseph Imperial
   photo: /assets/images/people/joseph.jpeg
   affiliation: University of Bath
   role: PhD Student
   research_interests:
     - Standardization in AI
-    - Benchmarking and evaluation 
-    - Low-resource NLP 
+    - Benchmarking and evaluation
+    - Low-resource NLP
   website: https://www.josephimperial.com/home
 
-- name: Blaise Cruz
+- id: bc
+  name: Blaise Cruz
   photo: /assets/images/people/blaise.jpg
-  affiliation: MBZUAI 
+  affiliation: MBZUAI
   role: PhD Student
   research_interests:
     - Code-switching
@@ -37,13 +41,15 @@
     - NLP applications
   website: https://blaisecruz.com/
 
-- name: Elyanah Aco
+- id: ea
+  name: Elyanah Aco
   photo: /assets/images/people/elyanah.jpeg
   affiliation: NAIST
   role: MS Student
   website: https://www.linkedin.com/in/elyanahaco2000/
 
-- name: Conner Manuel
+- id: cm
+  name: Conner Manuel
   photo: /assets/images/people/conner.jpeg
   affiliation: Together AI
   role: MLE

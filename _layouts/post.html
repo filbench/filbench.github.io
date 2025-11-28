@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.authors -%}
+        <br/>
+        <span class="post-authors">
+          {%- for author_id in page.authors -%}
+            {%- assign author_data = site.data.people | where: "id", author_id | first -%}
+            {%- if author_data -%}
+              <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <img src="{{ author_data.photo | relative_url }}" alt="{{ author_data.name }}" class="author-photo" />
+                <span class="p-author h-card" itemprop="name">
+                  {%- if author_data.website -%}
+                    <a href="{{ author_data.website }}" target="_blank" rel="noopener">{{ author_data.name }}</a>
+                  {%- else -%}
+                    {{ author_data.name }}
+                  {%- endif -%}
+                </span>
+              </span>
+            {%- else -%}
+              <span class="post-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="p-author h-card" itemprop="name">{{ author_id }}</span>
+              </span>
+            {%- endif -%}
+          {%- endfor -%}
+        </span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
