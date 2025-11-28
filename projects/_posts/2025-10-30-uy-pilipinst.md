@@ -35,8 +35,8 @@ By doing so, we aim to answer the following research questions:
 
 ## Other links and timelines
 
-We have a loose timeline, but we plan to officially start the project on February 2026.
-We don't have a publication target (yet), most of our findings will be shared through a technical report on arXiV.
+We have a loose timeline, but we plan to officially start the project on mid 2026.
+We don't have a publication target (yet, but likely sometime 2027), most of our findings will be shared through a technical report on arXiV.
 If you're interested to contribute / collaborate, you can read the full research brief (and other materials) in the links below:
 
 | Document | Description |
