@@ -3,7 +3,7 @@ layout: post
 title: "Come sit with us at the FilBench!"
 date: 2025-11-22
 authors: [ljvm]
-description:  
+description: I have high hopes for Filipino NLP.
 categories: blog
 ---
 
