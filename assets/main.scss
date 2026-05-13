@@ -3,7 +3,10 @@
 
 @import "minima";
 
-/* ---------- Design tokens (sfcompute palette, orange-shifted) ---------- */
+/* Import Inter font from Google Fonts */
+@import url('https://rsms.me/inter/inter.css');
+
+/* ---------- Design tokens (sfcompute palette, blue) ---------- */
 :root {
   /* Surface */
   --bg: #ffffff;
@@ -14,61 +17,134 @@
   --ink-soft: #404040;
   --ink-mute: #737373;
 
-  /* Brand — orange-shifted analog of sfcompute's blue ramp.
-     SFC blues: #0033be (deep) / #2d6fff (mid) / #5990ff (light)
-     Ours:      #7c2d12 (deep) / #ea580c (mid) / #fb923c (light) */
-  --brand-900: #7c2d12;
-  --brand-700: #c2410c;
-  --brand-600: #ea580c;  /* primary mid — analog of #2d6fff */
-  --brand-400: #fb923c;
-  --brand-300: #fdba74;
+  /* Brand — sfcompute blue ramp.
+     SFC blues: #0033be (deep) / #2d6fff (mid) / #5990ff (light) */
+  --brand-900: #0033be;
+  --brand-700: #1e40af;
+  --brand-600: #2d6fff;  /* primary mid */
+  --brand-400: #60a5fa;
+  --brand-300: #93c5fd;
 
   --brand: var(--brand-600);
   --brand-hover: var(--brand-700);
 
-  /* sfcompute button recipe — translated to orange.
+  /* sfcompute button recipe — blue gradients.
      outer = ring gradient (darker at top → lighter at bottom)
      face  = button face (lighter at top → mid → slightly darker) */
   --btn-outer: linear-gradient(var(--brand-900), var(--brand-600) 38%, var(--brand-400));
-  --btn-face:  linear-gradient(var(--brand-400), var(--brand-600) 62%, #d9480f);
-  --btn-face-hover: linear-gradient(var(--brand-300), var(--brand-600) 62%, #d9480f);
+  --btn-face:  linear-gradient(var(--brand-400), var(--brand-600) 62%, #1e40af);
+  --btn-face-hover: linear-gradient(var(--brand-300), var(--brand-600) 62%, #1e40af);
 }
 
-/* ---------- Page surface ---------- */
+/* Page surface */
 html, body {
   background: #ffffff !important;
   color: var(--ink) !important;
 }
 
-/* Narrow content like sfcompute */
+/* Narrow content like sfcompute - tighter max-width */
 .wrapper,
 .post-header .wrapper,
 .page-content .wrapper,
 .site-header .wrapper,
 .site-footer .wrapper {
-  max-width: 680px !important;
+  max-width: 700px !important;
   padding-left: 24px !important;
   padding-right: 24px !important;
+  margin: 0 auto !important;
 }
 
-/* Site header: thin orange accent + transparent surface */
+/* Post and page content margins */
+.post,
+.page {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+/* List spacing */
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Reset Minima defaults and apply sfcompute aesthetic */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* Site header: sfcompute-inspired minimal header */
 .site-header {
   background: transparent !important;
-  border-top: 3px solid var(--brand) !important;
-  border-bottom: 1px solid var(--rule) !important;
+  border-top: none !important;
+  border-bottom: none !important;
   min-height: auto;
+  padding: 20px 0 !important;
+  transition: border-color 0.3s ease;
+  margin-bottom: 2rem;
 }
 
 .site-title,
 .site-title:visited {
   color: var(--ink) !important;
   font-weight: 700 !important;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+  font-size: 1.4rem !important;
+  transition: color 0.3s ease;
+  margin: 0 !important;
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif !important;
+}
+
+.site-title:hover {
+  color: var(--brand) !important;
+}
+
+.site-nav {
+  margin-top: 0 !important;
+  display: flex;
+  gap: 2rem;
 }
 
 .site-nav .page-link,
 .site-nav .page-link:visited {
   color: var(--ink-soft) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-block;
+  padding: 2px 0;
+  font-size: 0.95rem;
+}
+
+.site-nav .page-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--brand);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .page-link:hover {
@@ -76,15 +152,19 @@ html, body {
   text-decoration: none;
 }
 
-/* Headings — Charter serif */
+.site-nav .page-link:hover::after {
+  width: 100%;
+}
+
+/* Headings — Georgia serif like sfcompute */
 h1, h2, h3, h4, h5, h6,
 .site-title,
 .post-title,
 .page-heading,
 .post-list-heading {
-  font-family: 'Charter', 'Charter BT', 'Iowan Old Style', 'Georgia', 'Times New Roman', serif !important;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif !important;
   color: var(--ink) !important;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   font-weight: 600;
 }
 
@@ -92,6 +172,7 @@ h1 {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1.15;
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif !important;
 }
 
 /* Reset Minima table styles completely */
@@ -104,89 +185,42 @@ table td {
   background-color: transparent !important;
 }
 
-/* Custom font declarations */
-@font-face {
-  font-family: 'Univers';
-  src: url('/assets/fonts/Univers/UniversRegular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+/* Custom font declarations removed - using system fonts like sfcompute */
 
-@font-face {
-  font-family: 'Univers';
-  src: url('/assets/fonts/Univers/UniversLight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url('/assets/fonts/Univers/UniversBold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Berkeley Mono';
-  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Berkeley Mono';
-  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Berkeley Mono';
-  src: url('/assets/fonts/BerkeleyMono/BerkeleyMono-Oblique.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Override all fonts to Univers */
+/* Override all fonts to Inter like sfcompute */
 body {
-  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-/* All headings and titles use Univers */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.site-title,
-.post-title,
-.page-heading,
-.post-list-heading {
-  font-family: 'Univers', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+/* Keep UI/body text in Inter; headings are explicitly serif above */
+.site-nav,
+.site-nav .page-link,
+.site-footer,
+p,
+li,
+button,
+.button {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif !important;
 }
 
-/* Code styling - minimal and elegant */
+/* Code styling - minimal and elegant like sfcompute */
 
 /* Inline code - no background, just the font */
 code {
-  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
   background: none !important;
   border: none !important;
   padding: 0 !important;
   color: #374151;
-  font-size: 0.9em;
+  font-size: 0.85em;
+  letter-spacing: 0.01em;
 }
 
 /* Code blocks - clean with subtle left border */
 pre {
-  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
   background-color: #fafafa !important;
   border: none !important;
   border-left: 3px solid #e5e7eb !important;
@@ -194,6 +228,7 @@ pre {
   padding: 16px 20px !important;
   overflow-x: auto;
   line-height: 1.6;
+  font-size: 0.9em;
 }
 
 pre code {
@@ -201,12 +236,12 @@ pre code {
   border: none !important;
   padding: 0 !important;
   color: inherit;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 /* Syntax highlighting container */
 .highlight {
-  font-family: 'Berkeley Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
   background-color: #fafafa !important;
   border-left: 3px solid #e5e7eb !important;
   border-radius: 0 !important;
@@ -216,37 +251,30 @@ pre code {
   background-color: #fafafa !important;
 }
 
-/* Button — sfcompute double-gradient: gradient ring + glossy face.
-   Face paints inside the padding; ring paints inside the border. */
+/* Button — match sfcompute style */
 button,
 .button,
 a.button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 9px 18px;
+  min-height: 40px;
+  padding: 8px 16px;
   border: 1px solid transparent;
-  border-radius: 9px;
-
-  background-image: var(--btn-face), var(--btn-outer);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-
+  border-radius: 6px;
+  background-color: var(--brand);
   color: #fff;
   font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.005em;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
-  transition: filter 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
-
-  /* Glossy top highlight + warm drop shadow */
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.08),
-    0 1px 2px rgba(124, 45, 18, 0.25),
-    0 4px 10px rgba(234, 88, 12, 0.18);
-  text-shadow: 0 1px 0 rgba(124, 45, 18, 0.35);
+  touch-action: manipulation;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  box-shadow: none;
 }
 
 button:visited,
@@ -258,14 +286,8 @@ a.button:visited {
 button:hover,
 .button:hover,
 a.button:hover {
-  background-image: var(--btn-face-hover), var(--btn-outer);
-  filter: saturate(1.05);
-  transform: translateY(-1px);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.08),
-    0 2px 4px rgba(124, 45, 18, 0.3),
-    0 6px 14px rgba(234, 88, 12, 0.24);
+  background-color: var(--brand-hover);
+  border-color: var(--brand-hover);
   text-decoration: none;
   color: #fff;
 }
@@ -273,11 +295,15 @@ a.button:hover {
 button:active,
 .button:active,
 a.button:active {
-  transform: translateY(0);
-  box-shadow:
-    inset 0 2px 4px rgba(124, 45, 18, 0.35),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    0 1px 2px rgba(124, 45, 18, 0.2);
+  background-color: var(--brand-700);
+  border-color: var(--brand-700);
+}
+
+button:focus-visible,
+.button:focus-visible,
+a.button:focus-visible {
+  outline: 2px solid var(--brand-900);
+  outline-offset: 2px;
 }
 
 .button svg,
@@ -354,11 +380,13 @@ table tbody tr:last-child td {
   padding-bottom: 8px;
 }
 
-/* Link colors — warm amber */
+/* Link colors — warm amber with sfcompute-style animations */
 a {
   color: var(--brand);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: inline-block;
 }
 
 a:visited {
@@ -366,21 +394,46 @@ a:visited {
 }
 
 a:hover {
-  color: var(--brand-soft);
-  text-decoration: underline;
+  color: var(--brand-hover);
+  text-decoration: none;
+}
+
+/* Underline animation for links in prose */
+.post-content a,
+.page-content a:not(.button):not(.project-link) {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.post-content a::after,
+.page-content a:not(.button):not(.project-link)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--brand);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.post-content a:hover::after,
+.page-content a:not(.button):not(.project-link):hover::after {
+  width: 100%;
 }
 
 /* Minimal footer styling */
 .site-footer {
   border-top: 1px solid var(--rule);
-  padding: 15px 0;
+  padding: 25px 0;
   background-color: transparent;
+  transition: border-color 0.3s ease;
 }
 
 .site-footer .wrapper {
-  max-width: 800px;
+  max-width: 680px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 24px;
 }
 
 .site-footer .footer-content {
@@ -391,9 +444,10 @@ a:hover {
 
 .site-footer .footer-left,
 .site-footer .footer-right {
-  color: #828282;
+  color: #999;
   font-size: 13px;
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .site-footer .footer-left {
@@ -402,6 +456,11 @@ a:hover {
 
 .site-footer .footer-right {
   text-align: right;
+}
+
+.site-footer .footer-left:hover,
+.site-footer .footer-right:hover {
+  color: var(--brand);
 }
 
 @media (max-width: 600px) {
