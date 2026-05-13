@@ -25,9 +25,7 @@ huggingface_username: filbench
 rss: rss
 
 # Navigation menu order
-header_pages:
-  - publications.md
-  - join.md
+header_pages: []
 
 # Build settings
 markdown: kramdown

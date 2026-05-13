@@ -18,7 +18,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     HuggingFace
     <span style="margin-left: 4px;">→</span>
   </a>
-  <a href="#" class="button">
+  <a href="#join" class="button">
     <img src="{{ '/assets/icons/users.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
     Join Us
     <span style="margin-left: 4px;">→</span>
@@ -113,4 +113,9 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     </li>
     {% endfor %}
   </ul>
+</div>
+
+<div class="join-section" id="join">
+  <h2>Join Us</h2>
+  <p class="join-intro">Reach out to <a href="https://calendar.app.google/M6z8BzZZ5RaTgdqH9">Lj</a> and mention your research interests. If you also <a href="#people">know someone</a> from FilBench, you can ask them to add you.</p>
 </div>
