@@ -102,7 +102,12 @@ body {
   min-height: auto;
   padding: 20px 0 !important;
   transition: border-color 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home > h1:first-child,
+.page-content .home h1:first-child {
+  margin-top: 0;
 }
 
 .site-title,
