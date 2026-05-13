@@ -10,12 +10,12 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
 <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
   <a href="https://github.com/filbench" class="button">
     <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
-    Code
+    GitHub
     <span style="margin-left: 4px;">→</span>
   </a>
   <a href="https://huggingface.co/filbench" class="button">
     <img src="{{ '/assets/icons/huggingface.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
-    Resources
+    HuggingFace
     <span style="margin-left: 4px;">→</span>
   </a>
   <a href="#" class="button">
