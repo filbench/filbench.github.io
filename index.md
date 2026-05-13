@@ -89,23 +89,24 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     <div class="year-group">
       <div class="year-heading">{{ year }}</div>
       {% for pub in pubs %}
+      {% assign pdf_link = pub.links | where: "name", "PDF" | first %}
       <div class="publication">
-        <div class="pub-image">
-          <img src="{{ pub.image | relative_url }}" alt="Paper visualization">
+        <div class="pub-line">
+          <span class="pub-title">{% if pdf_link %}<a href="{{ pdf_link.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span> <span class="pub-venue">({{ pub.venue }})</span>. <span class="pub-authors">{{ pub.authors }}</span>
         </div>
-        <div class="pub-content">
-          <div class="pub-title">{{ pub.title }}</div>
-          <div class="pub-authors">{{ pub.authors }}</div>
-          <div class="pub-venue">{{ pub.venue }}</div>
-          <div class="pub-links">
-            {% for link in pub.links %}
-            <a href="{{ link.url }}">{{ link.name }}</a>
-            {% endfor %}
+        {% if pub.abstract or pub.links.size > 1 %}
+        <details class="pub-expand">
+          <summary>Expand</summary>
+          <div class="pub-expand-content">
+            {% if pub.abstract %}<p class="pub-abstract">{{ pub.abstract }}</p>{% endif %}
+            {% if pub.links.size > 0 %}
+            <div class="pub-links">
+              {% for link in pub.links %}{% if link.name != "PDF" %}<a href="{{ link.url }}" class="pub-link">{{ link.name }}</a>{% endif %}{% endfor %}
+            </div>
+            {% endif %}
           </div>
-          {% if pub.abstract %}
-          <div class="pub-abstract">{{ pub.abstract }}</div>
-          {% endif %}
-        </div>
+        </details>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
