@@ -535,8 +535,9 @@ a:hover {
 /* Minimal footer styling */
 .site-footer {
   border-top: 1px solid var(--rule);
-  padding: 25px 0;
-  background-color: transparent;
+  padding: 32px 0;
+  background-color: #f5f5f5;
+  margin-top: 4rem;
   transition: border-color 0.3s ease;
 }
 
@@ -562,6 +563,19 @@ a:hover {
 
 .site-footer .footer-left {
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-logo {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+.site-footer .footer-left p {
+  margin: 0;
 }
 
 .site-footer .footer-right {
