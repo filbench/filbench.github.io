@@ -7,21 +7,21 @@ layout: home
 We are a collective, from graduate students to industry practitioners, who are working to advance Philippine natural language processing (NLP) through open research and collaboration.
 We operate as a scrappy grassroots team, pooling shared resources to move fast and build what the research community needs.
 
-<div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-  <a href="https://github.com/filbench" class="button">
-    <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
+<div style="margin-top: 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+  <a href="https://github.com/filbench" class="button button-secondary">
+    <img src="{{ '/assets/icons/github.svg' | relative_url }}" alt="" class="btn-icon">
     GitHub
-    <span style="margin-left: 4px;">→</span>
+    <i class="fa-regular fa-circle-right btn-arrow"></i>
   </a>
-  <a href="https://huggingface.co/filbench" class="button">
-    <img src="{{ '/assets/icons/huggingface.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
+  <a href="https://huggingface.co/filbench" class="button button-secondary">
+    <img src="{{ '/assets/icons/huggingface.svg' | relative_url }}" alt="" class="btn-icon">
     HuggingFace
-    <span style="margin-left: 4px;">→</span>
+    <i class="fa-regular fa-circle-right btn-arrow"></i>
   </a>
   <a href="#join" class="button">
-    <img src="{{ '/assets/icons/users.svg' | relative_url }}" alt="" style="width: 18px; height: 18px;">
+    <img src="{{ '/assets/icons/users.svg' | relative_url }}" alt="" class="btn-icon">
     Join Us
-    <span style="margin-left: 4px;">→</span>
+    <i class="fa-regular fa-circle-right btn-arrow"></i>
   </a>
 </div>
 
@@ -105,7 +105,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
 </div>
 
 <div class="people-section" id="people">
-  <h2>People</h2>
+  <h2>Who are we?</h2>
   <p class="people-intro">We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.</p>
   <ul class="people-list">
     {% for person in site.data.people %}

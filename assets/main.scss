@@ -449,6 +449,53 @@ a.button:focus-visible {
   filter: brightness(0) invert(1);
 }
 
+.btn-arrow {
+  margin-left: 2px;
+  font-size: 1em;
+}
+
+/* Secondary (ghost) button — sfcompute "Read about SFC" style */
+.button-secondary,
+a.button-secondary {
+  background-image: none;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  color: var(--ink);
+  text-shadow: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.button-secondary::before,
+.button-secondary::after,
+a.button-secondary::before,
+a.button-secondary::after {
+  display: none;
+}
+
+.button-secondary:hover,
+a.button-secondary:hover {
+  background-color: #f9fafb;
+  background-image: none;
+  border-color: #d1d5db;
+  color: var(--ink);
+  opacity: 1;
+}
+
+.button-secondary:visited,
+a.button-secondary:visited {
+  color: var(--ink);
+}
+
+.button-secondary:active,
+a.button-secondary:active {
+  border-color: #d1d5db;
+}
+
+.button-secondary img,
+.button-secondary svg {
+  filter: none;
+}
+
 /* Booktabs-style table styling - override minima defaults */
 table {
   margin-bottom: 30px;
