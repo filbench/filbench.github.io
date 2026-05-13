@@ -118,31 +118,15 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   <p class="people-intro">We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.</p>
   <ul class="people-list">
     {% for person in site.data.people %}
-    <li class="person-card">
-      <div class="person-content">
-        <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" class="person-photo">
-        <div class="person-info">
-          <div class="person-name">
-            {% if person.website %}
-            <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
-            {% else %}
-            {{ person.name }}
-            {% endif %}
-          </div>
-          <div class="person-affiliation-role">
-            {% if person.role %}{{ person.role }}, {% endif %}{{ person.affiliation }}
-          </div>
-        </div>
-        {% if person.research_interests %}
-        <div class="person-interests">
-          <ul>
-            {% for interest in person.research_interests %}
-            <li>{{ interest }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+    <li class="person-item">
+      <span class="person-name">
+        {% if person.website %}
+        <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
+        {% else %}
+        {{ person.name }}
         {% endif %}
-      </div>
+      </span>.
+      <span class="person-affiliation-role">{% if person.role %}{{ person.role }}, {% endif %}{{ person.affiliation }}</span>
     </li>
     {% endfor %}
   </ul>
