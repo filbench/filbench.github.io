@@ -80,8 +80,8 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   </div>
 </div>
 
-<div class="publications-section" id="publications">
-  <h2>Publications</h2>
+<details class="publications-section collapsible-section" id="publications">
+  <summary><h2>Publications</h2></summary>
   <div class="publications">
   {% for year_data in site.data.publications %}
     {% assign year = year_data[0] %}
@@ -111,10 +111,10 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     </div>
   {% endfor %}
   </div>
-</div>
+</details>
 
-<div class="people-section" id="people">
-  <h2>People</h2>
+<details class="people-section collapsible-section" id="people">
+  <summary><h2>People</h2></summary>
   <p class="people-intro">We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.</p>
   <ul class="people-list">
     {% for person in site.data.people %}
@@ -146,7 +146,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     </li>
     {% endfor %}
   </ul>
-</div>
+</details>
 
 <div class="join-section" id="join">
   <h2>Join Us</h2>
