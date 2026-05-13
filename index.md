@@ -80,42 +80,32 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   </div>
 </div>
 
-<details class="publications-section collapsible-section" id="publications">
-  <summary><h2>Publications</h2></summary>
-  <div class="publications">
+<div class="publications-section" id="publications">
+  <h2>Publications</h2>
+  <ul class="publications">
   {% for year_data in site.data.publications %}
-    {% assign year = year_data[0] %}
     {% assign pubs = year_data[1] %}
-    <div class="year-group">
-      <div class="year-heading">{{ year }}</div>
-      {% for pub in pubs %}
-      {% assign pdf_link = pub.links | where: "name", "PDF" | first %}
-      <div class="publication">
-        <div class="pub-line">
-          <span class="pub-title">{% if pdf_link %}<a href="{{ pdf_link.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span> <span class="pub-venue">({{ pub.venue }})</span>. <span class="pub-authors">{{ pub.authors }}</span>
-        </div>
-        {% if pub.abstract or pub.links.size > 1 %}
-        <details class="pub-expand">
-          <summary>Expand</summary>
-          <div class="pub-expand-content">
-            {% if pub.abstract %}<p class="pub-abstract">{{ pub.abstract }}</p>{% endif %}
-            {% if pub.links.size > 0 %}
-            <div class="pub-links">
-              {% for link in pub.links %}{% if link.name != "PDF" %}<a href="{{ link.url }}" class="pub-link">{{ link.name }}</a>{% endif %}{% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </details>
-        {% endif %}
+    {% for pub in pubs %}
+    {% assign pdf_link = pub.links | where: "name", "PDF" | first %}
+    <li class="publication">
+      <div class="pub-line">
+        <span class="pub-title">{% if pdf_link %}<a href="{{ pdf_link.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span> <span class="pub-venue">{{ pub.venue }}</span>
       </div>
-      {% endfor %}
-    </div>
+      <div class="pub-authors">{{ pub.authors }}</div>
+      {% if pub.abstract %}<p class="pub-abstract">{{ pub.abstract }}</p>{% endif %}
+      {% if pub.links.size > 1 %}
+      <div class="pub-links">
+        {% for link in pub.links %}{% if link.name != "PDF" %}{% case link.name %}{% when "Code" %}{% assign icon = "fa-solid fa-code" %}{% when "Website" %}{% assign icon = "fa-solid fa-globe" %}{% when "Poster" %}{% assign icon = "fa-solid fa-image" %}{% when "Presentation" %}{% assign icon = "fa-solid fa-circle-play" %}{% when "Dataset" %}{% assign icon = "fa-solid fa-database" %}{% when "Leaderboard" %}{% assign icon = "fa-solid fa-trophy" %}{% else %}{% assign icon = "fa-solid fa-link" %}{% endcase %}<a href="{{ link.url }}" class="pub-link" title="{{ link.name }}" aria-label="{{ link.name }}"><i class="{{ icon }}"></i> {{ link.name }}</a>{% endif %}{% endfor %}
+      </div>
+      {% endif %}
+    </li>
+    {% endfor %}
   {% endfor %}
-  </div>
-</details>
+  </ul>
+</div>
 
-<details class="people-section collapsible-section" id="people">
-  <summary><h2>People</h2></summary>
+<div class="people-section" id="people">
+  <h2>People</h2>
   <p class="people-intro">We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.</p>
   <ul class="people-list">
     {% for person in site.data.people %}
@@ -131,7 +121,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     </li>
     {% endfor %}
   </ul>
-</details>
+</div>
 
 <div class="join-section" id="join">
   <h2>Join Us</h2>

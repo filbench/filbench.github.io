@@ -782,7 +782,14 @@ sup[id^="fnref"] a:hover {
 }
 
 .publications {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
+  list-style: disc !important;
+  padding-left: 1.2em !important;
+  margin-left: 0 !important;
+}
+
+.publication {
+  margin-bottom: 0.9rem;
 }
 
 .year-group {
@@ -799,87 +806,79 @@ sup[id^="fnref"] a:hover {
 }
 
 .publication {
-  display: flex;
-  gap: 0.9rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.publication:last-child {
-  border-bottom: none;
-}
-
-.pub-image {
-  flex-shrink: 0;
-  width: 140px;
-}
-
-.pub-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.pub-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.pub-title {
+  margin-bottom: 0.9rem;
   font-size: 0.95em;
-  font-weight: 400;
-  margin-bottom: 0.25em;
-  line-height: 1.3;
-  color: #111827;
+  line-height: 1.5;
 }
 
-.pub-authors {
-  color: #666;
-  margin-bottom: 0.2em;
-  font-size: 0.9em;
+.pub-line {
+  line-height: 1.55;
+}
+
+.pub-title,
+.pub-title a {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif !important;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.pub-title a:hover {
+  color: var(--brand);
+  text-decoration: underline;
 }
 
 .pub-venue {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif !important;
+  color: #6b7280;
   font-style: italic;
-  color: #999;
-  margin-bottom: 0.5em;
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
-.pub-links {
-  margin-top: 0.5em;
-}
-
-.pub-links a {
-  display: inline-block;
-  margin-right: 0.5em;
-  margin-bottom: 0.25em;
-  padding: 0.2em 0.6em;
-  background-color: #f5f5f5;
-  border: 1px solid #e5e7eb;
-  border-radius: 3px;
-  text-decoration: none;
-  font-size: 0.85em;
-  color: var(--brand);
-  font-weight: 400;
-}
-
-.pub-links a:hover {
-  background-color: #eef2ff;
-  text-decoration: none;
-  color: var(--brand);
+.pub-authors {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, sans-serif !important;
+  color: #6b7280;
+  font-size: 0.9em;
 }
 
 .pub-abstract {
-  margin-top: 0.5em;
-  padding: 0.75em 1em;
-  background-color: #fafafa;
-  border-left: 2px solid #e0e0e0;
-  border-radius: 2px;
-  font-size: 0.85em;
-  color: #666;
-  line-height: 1.4;
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: #4b5563;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.2em 0.6em;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 0.78em;
+  color: var(--ink-soft, #404040);
+  text-decoration: none;
+  background: #fafafa;
+}
+
+.pub-link i {
+  font-size: 0.95em;
+}
+
+.pub-link:hover {
+  background: #f3f4f6;
+  border-color: var(--brand);
+  color: var(--brand);
+  text-decoration: none;
 }
 
 .people-section {
