@@ -40,7 +40,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
 .home-section h2 {
   font-size: 1.1em;
   margin-bottom: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .news-list,
@@ -101,10 +101,114 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   line-height: 1.3;
 }
 
+.people-section {
+  margin-top: 2.5rem;
+}
+
+.people-section h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.people-intro {
+  font-size: 0.95em;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.person-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fafafa;
+  padding: 0.65rem;
+}
+
+.person-content {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.person-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.person-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.person-name {
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.person-name a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.person-name a:hover {
+  color: var(--brand);
+}
+
+.person-affiliation-role {
+  font-size: 0.78em;
+  color: #6b7280;
+  line-height: 1.35;
+}
+
+.person-interests {
+  font-size: 0.74em;
+  color: #6b7280;
+  line-height: 1.35;
+  flex-basis: 100%;
+}
+
+.person-interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.person-interests li {
+  display: inline;
+}
+
+.person-interests li:after {
+  content: " • ";
+  color: #d1d5db;
+}
+
+.person-interests li:last-child:after {
+  content: "";
+}
+
 @media (max-width: 768px) {
   .home-sections {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .people-list {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -141,4 +245,39 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     <p style="font-size: 0.9em; color: #666;">No projects yet.</p>
     {% endif %}
   </div>
+</div>
+
+<div class="people-section">
+  <h2>People</h2>
+  <p class="people-intro">We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.</p>
+  <ul class="people-list">
+    {% for person in site.data.people %}
+    <li class="person-card">
+      <div class="person-content">
+        <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}" class="person-photo">
+        <div class="person-info">
+          <div class="person-name">
+            {% if person.website %}
+            <a href="{{ person.website }}" target="_blank">{{ person.name }}</a>
+            {% else %}
+            {{ person.name }}
+            {% endif %}
+          </div>
+          <div class="person-affiliation-role">
+            {% if person.role %}{{ person.role }}, {% endif %}{{ person.affiliation }}
+          </div>
+        </div>
+        {% if person.research_interests %}
+        <div class="person-interests">
+          <ul>
+            {% for interest in person.research_interests %}
+            <li>{{ interest }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
