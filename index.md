@@ -80,6 +80,39 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   </div>
 </div>
 
+<div class="publications-section" id="publications">
+  <h2>Publications</h2>
+  <div class="publications">
+  {% for year_data in site.data.publications %}
+    {% assign year = year_data[0] %}
+    {% assign pubs = year_data[1] %}
+    <div class="year-group">
+      <div class="year-heading">{{ year }}</div>
+      {% for pub in pubs %}
+      <div class="publication">
+        <div class="pub-image">
+          <img src="{{ pub.image | relative_url }}" alt="Paper visualization">
+        </div>
+        <div class="pub-content">
+          <div class="pub-title">{{ pub.title }}</div>
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-venue">{{ pub.venue }}</div>
+          <div class="pub-links">
+            {% for link in pub.links %}
+            <a href="{{ link.url }}">{{ link.name }}</a>
+            {% endfor %}
+          </div>
+          {% if pub.abstract %}
+          <div class="pub-abstract">{{ pub.abstract }}</div>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
 <div class="people-section" id="people">
   <h2>People</h2>
   <p class="people-intro">We started as a small group of researchers who met at conferences and workshops, connected through cold emails and a shared passion for Filipino NLP.</p>
