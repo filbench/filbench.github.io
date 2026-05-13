@@ -27,7 +27,6 @@ rss: rss
 # Navigation menu order
 header_pages:
   - publications.md
-  - blog/index.md
   - join.md
 
 # Build settings
