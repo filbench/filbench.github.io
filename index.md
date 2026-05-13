@@ -27,7 +27,7 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
 
 <div class="home-sections">
   <div class="home-section">
-    <h3>News</h3>
+    <h2>News</h2>
     <ul class="news-list">
       {% for item in site.data.news limit:4 %}
       <li class="news-item">
@@ -41,11 +41,11 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
   </div>
 
   <div class="home-section">
-    <h3>Ongoing Projects</h3>
+    <h2>Ongoing Projects</h2>
     {% assign projects = site.categories.projects | sort: 'date' | reverse %}
     {% if projects.size > 0 %}
     <ul class="projects-list">
-      {% for project in projects %}
+      {% for project in projects limit:3 %}
       <li class="project-item">
         <div class="project-title">
           <a href="{{ project.url | relative_url }}" class="project-link">{{ project.title }}</a>
@@ -56,6 +56,27 @@ We operate as a scrappy grassroots team, pooling shared resources to move fast a
     {% else %}
     <p style="font-size: 0.9em; color: #666;">No projects yet.</p>
     {% endif %}
+
+    <div class="home-subsection">
+      <h2>Blog</h2>
+      {% assign blog_posts = site.posts | where_exp: "post", "post.path contains 'blog/_posts'" | sort: 'date' | reverse %}
+      {% if blog_posts.size > 0 %}
+      <ul class="blog-list">
+        {% for post in blog_posts limit:3 %}
+        <li class="blog-item">
+          <div class="blog-header">
+            <div class="blog-title">
+              <a href="{{ post.url | relative_url }}" class="blog-link">{{ post.title }}</a>
+            </div>
+            <div class="blog-date">{{ post.date | date: "%b %Y" }}</div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p style="font-size: 0.9em; color: #666;">No blog posts yet.</p>
+      {% endif %}
+    </div>
   </div>
 </div>
 
