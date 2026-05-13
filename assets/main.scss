@@ -108,7 +108,7 @@ body {
 .site-title,
 .site-title:visited {
   color: var(--ink) !important;
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   letter-spacing: -0.02em;
   font-size: 1.4rem !important;
   transition: color 0.3s ease;
@@ -149,11 +149,11 @@ h1, h2, h3, h4, h5, h6,
   font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif !important;
   color: var(--ink) !important;
   letter-spacing: -0.02em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2.25rem;
   line-height: 1.15;
   font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif !important;
