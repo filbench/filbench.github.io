@@ -11,4 +11,21 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "alternateName": "{{ site.tagline }}",
+    "url": "{{ site.url }}{{ site.baseurl }}",
+    "logo": "{{ site.url }}{{ site.baseurl }}{{ site.logo }}",
+    "image": "{{ site.url }}{{ site.baseurl }}{{ site.image }}",
+    "description": "{{ site.description | strip_newlines | strip }}",
+    "email": "{{ site.email }}",
+    "sameAs": [
+      "https://github.com/{{ site.github_username }}",
+      "https://huggingface.co/{{ site.huggingface_username }}"
+    ]
+  }
+  </script>
 </head>

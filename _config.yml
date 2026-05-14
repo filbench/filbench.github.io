@@ -13,16 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: FilBench 
+title: FilBench
+tagline: A collective of Filipino NLP researchers
 email: filbench@googlegroups.com
 description: >- # this means to ignore newlines until "baseurl:"
     We are a collective of Filipino NLP researchers building resources, benchmarks, and models for Philippine languages.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://filbench.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-timeone: Asia/Manila
+timezone: Asia/Manila
 github_username: filbench
 huggingface_username: filbench
 rss: rss
+
+# SEO / social
+logo: /assets/icons/filbench-logo.svg
+image: /assets/images/og-image.png
+social:
+  name: FilBench
+  links:
+    - https://github.com/filbench
+    - https://huggingface.co/filbench
 
 # Navigation menu order
 header_pages:
@@ -34,6 +44,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Permalink settings - remove .html from URLs
 permalink: pretty
